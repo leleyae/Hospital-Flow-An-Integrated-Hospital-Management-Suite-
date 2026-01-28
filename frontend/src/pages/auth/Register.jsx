@@ -44,7 +44,11 @@ const Register = () => {
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             First Name
                                         </label>
                                         <div className="relative">
@@ -62,7 +66,11 @@ const Register = () => {
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Last Name
                                         </label>
                                         <div className="relative">
@@ -81,7 +89,11 @@ const Register = () => {
                                 </div>
 
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Email Address
                                     </label>
                                     <div className="relative">
@@ -99,7 +111,11 @@ const Register = () => {
                                 </div>
 
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Phone Number
                                     </label>
                                     <div className="relative">
@@ -118,7 +134,11 @@ const Register = () => {
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Date of Birth
                                         </label>
                                         <div className="relative">
@@ -135,7 +155,11 @@ const Register = () => {
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Address
                                         </label>
                                         <div className="relative">
@@ -155,7 +179,11 @@ const Register = () => {
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Password
                                         </label>
                                         <div className="relative">
@@ -180,7 +208,11 @@ const Register = () => {
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Confirm Password
                                         </label>
                                         <div className="relative">
@@ -205,7 +237,11 @@ const Register = () => {
                                         className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                                         required
                                     />
+<<<<<<< HEAD
                                     <label htmlFor="terms" className="ml-2 text-lg text-gray-700">
+=======
+                                    <label htmlFor="terms" className="ml-2 text-sm text-gray-700">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         I agree to the{' '}
                                         <Link to="/terms" className="text-blue-600 hover:text-blue-500">
                                             Terms of Service
@@ -249,14 +285,22 @@ const Register = () => {
                                         </div>
                                         <div>
                                             <h3 className="font-semibold">Online Appointments</h3>
+<<<<<<< HEAD
                                             <p className="text-blue-100 text-lg">Book appointments 24/7</p>
+=======
+                                            <p className="text-blue-100 text-sm">Book appointments 24/7</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </div>
                                     </li>
                                     <li className="flex items-start">
 
                                         <div>
                                             <h3 className="font-semibold">Medical Records</h3>
+<<<<<<< HEAD
                                             <p className="text-blue-100 text-lg">Access health history online</p>
+=======
+                                            <p className="text-blue-100 text-sm">Access health history online</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </div>
                                     </li>
                                     <li className="flex items-start">
@@ -265,14 +309,22 @@ const Register = () => {
                                         </div>
                                         <div>
                                             <h3 className="font-semibold">Prescriptions</h3>
+<<<<<<< HEAD
                                             <p className="text-blue-100 text-lg">View and refill medications</p>
+=======
+                                            <p className="text-blue-100 text-sm">View and refill medications</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </div>
                                     </li>
                                     <li className="flex items-start">
 
                                         <div>
                                             <h3 className="font-semibold">Telemedicine</h3>
+<<<<<<< HEAD
                                             <p className="text-blue-100 text-lg">Virtual consultations</p>
+=======
+                                            <p className="text-blue-100 text-sm">Virtual consultations</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </div>
                                     </li>
                                 </ul>

@@ -123,7 +123,11 @@ const Appointments = () => {
                     {['upcoming', 'past', 'cancelled'].map((tab) => (
                         <button
                             key={tab}
+<<<<<<< HEAD
                             className={`py-2 px-1 border-b-2 font-medium text-lg ${activeTab === tab
+=======
+                            className={`py-2 px-1 border-b-2 font-medium text-sm ${activeTab === tab
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 ? 'border-blue-500 text-blue-600'
                                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                 }`}
@@ -151,7 +155,11 @@ const Appointments = () => {
                                     <div className="ml-4">
                                         <h3 className="font-bold text-lg">{appointment.doctor}</h3>
                                         <p className="text-gray-600">{appointment.specialization}</p>
+<<<<<<< HEAD
                                         <div className="flex items-center mt-2 space-x-4 text-lg text-gray-500">
+=======
+                                        <div className="flex items-center mt-2 space-x-4 text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <span className="flex items-center">
                                                 <CalendarDays className="w-4 h-4 mr-1" />
                                                 {appointment.date}
@@ -191,16 +199,28 @@ const Appointments = () => {
                             <div className="mt-4 pt-4 border-t border-gray-200">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center space-x-4">
+<<<<<<< HEAD
                                         <button className="flex items-center text-lg text-blue-600 hover:text-blue-700">
                                             <Phone className="w-4 h-4 mr-1" />
                                             Call Doctor
                                         </button>
                                         <button className="flex items-center text-lg text-blue-600 hover:text-blue-700">
+=======
+                                        <button className="flex items-center text-sm text-blue-600 hover:text-blue-700">
+                                            <Phone className="w-4 h-4 mr-1" />
+                                            Call Doctor
+                                        </button>
+                                        <button className="flex items-center text-sm text-blue-600 hover:text-blue-700">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <MapPin className="w-4 h-4 mr-1" />
                                             Get Directions
                                         </button>
                                     </div>
+<<<<<<< HEAD
                                     <button className="text-lg text-gray-600 hover:text-gray-800">
+=======
+                                    <button className="text-sm text-gray-600 hover:text-gray-800">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         View Details
                                     </button>
                                 </div>
@@ -230,11 +250,19 @@ const Appointments = () => {
                                                 {'★'.repeat(5 - Math.floor(doctor.rating))}
                                             </span>
                                         </div>
+<<<<<<< HEAD
                                         <span className="ml-2 text-lg text-gray-600">{doctor.rating}</span>
                                     </div>
                                     <div className="mt-3 flex items-center justify-between">
                                         <div>
                                             <p className="text-lg text-gray-500">Available Slots:</p>
+=======
+                                        <span className="ml-2 text-sm text-gray-600">{doctor.rating}</span>
+                                    </div>
+                                    <div className="mt-3 flex items-center justify-between">
+                                        <div>
+                                            <p className="text-sm text-gray-500">Available Slots:</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <div className="flex flex-wrap gap-1 mt-1">
                                                 {doctor.availableSlots.map((slot, idx) => (
                                                     <span key={idx} className="px-2 py-1 bg-gray-100 rounded text-xs">
@@ -247,7 +275,11 @@ const Appointments = () => {
                                             <p className="font-bold">{doctor.consultationFee}</p>
                                             <button
                                                 onClick={() => handleBookAppointment(doctor.id)}
+<<<<<<< HEAD
                                                 className="mt-2 btn-primary text-lg py-1.5 px-3"
+=======
+                                                className="mt-2 btn-primary text-sm py-1.5 px-3"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             >
                                                 Book Now
                                             </button>

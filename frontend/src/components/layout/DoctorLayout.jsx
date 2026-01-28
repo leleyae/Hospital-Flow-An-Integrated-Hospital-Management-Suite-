@@ -81,7 +81,11 @@ const DoctorLayout = () => {
                             </div>
                             <div className="ml-4">
                                 <h3 className="font-medium text-gray-900">Dr. John Doe</h3>
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500">Cardiologist</p>
+=======
+                                <p className="text-sm text-gray-500">Cardiologist</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                         </div>
                     </div>
@@ -149,7 +153,11 @@ const DoctorLayout = () => {
                                 <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                                     <User className="w-4 h-4 text-blue-600" />
                                 </div>
+<<<<<<< HEAD
                                 <span className="ml-2 text-lg font-medium text-gray-700 hidden md:inline">
+=======
+                                <span className="ml-2 text-sm font-medium text-gray-700 hidden md:inline">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Dr. John Doe
                                 </span>
                             </div>

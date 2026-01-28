@@ -47,7 +47,11 @@ const ForgotPassword = () => {
 
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Email Address
                                     </label>
                                     <div className="relative">
@@ -89,7 +93,11 @@ const ForgotPassword = () => {
                                 >
                                     Return to Login
                                 </Link>
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500">
+=======
+                                <p className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Didnt receive the email?{' '}
                                     <button
                                         onClick={() => setSubmitted(false)}
@@ -104,7 +112,11 @@ const ForgotPassword = () => {
 
                     {/* Support Info */}
                     <div className="mt-8 pt-8 border-t border-gray-200">
+<<<<<<< HEAD
                         <p className="text-center text-lg text-gray-600">
+=======
+                        <p className="text-center text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Need help? Contact our support team at{' '}
                             <a href="mailto:support@hospital.com" className="text-blue-600 hover:text-blue-500">
                                 support@hospital.com

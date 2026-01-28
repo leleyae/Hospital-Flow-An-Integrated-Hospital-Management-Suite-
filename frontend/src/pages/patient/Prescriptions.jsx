@@ -95,7 +95,11 @@ const Prescriptions = () => {
                             <Pill className="w-6 h-6 text-green-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Active</p>
+=======
+                            <p className="text-sm text-gray-500">Active</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">2</p>
                         </div>
                     </div>
@@ -107,7 +111,11 @@ const Prescriptions = () => {
                             <RefreshCw className="w-6 h-6 text-blue-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Refills Available</p>
+=======
+                            <p className="text-sm text-gray-500">Refills Available</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">3</p>
                         </div>
                     </div>
@@ -119,7 +127,11 @@ const Prescriptions = () => {
                             <Calendar className="w-6 h-6 text-yellow-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Expiring Soon</p>
+=======
+                            <p className="text-sm text-gray-500">Expiring Soon</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">1</p>
                         </div>
                     </div>
@@ -131,7 +143,11 @@ const Prescriptions = () => {
                             <FileText className="w-6 h-6 text-purple-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Total</p>
+=======
+                            <p className="text-sm text-gray-500">Total</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">12</p>
                         </div>
                     </div>
@@ -144,7 +160,11 @@ const Prescriptions = () => {
                     {['active', 'completed', 'expired'].map((tab) => (
                         <button
                             key={tab}
+<<<<<<< HEAD
                             className={`py-2 px-1 border-b-2 font-medium text-lg ${activeTab === tab
+=======
+                            className={`py-2 px-1 border-b-2 font-medium text-sm ${activeTab === tab
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 ? 'border-blue-500 text-blue-600'
                                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                 }`}
@@ -210,31 +230,51 @@ const Prescriptions = () => {
 
                                         <div className="mt-2 grid grid-cols-2 md:grid-cols-4 gap-4">
                                             <div>
+<<<<<<< HEAD
                                                 <p className="text-lg text-gray-500">Prescribed By</p>
+=======
+                                                <p className="text-sm text-gray-500">Prescribed By</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <div className="flex items-center">
                                                     <User className="w-4 h-4 text-gray-400 mr-1" />
                                                     <span className="font-medium">{prescription.doctor}</span>
                                                 </div>
                                             </div>
                                             <div>
+<<<<<<< HEAD
                                                 <p className="text-lg text-gray-500">Date</p>
+=======
+                                                <p className="text-sm text-gray-500">Date</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <div className="flex items-center">
                                                     <Calendar className="w-4 h-4 text-gray-400 mr-1" />
                                                     <span>{prescription.date}</span>
                                                 </div>
                                             </div>
                                             <div>
+<<<<<<< HEAD
                                                 <p className="text-lg text-gray-500">Dosage</p>
                                                 <p className="font-medium">{prescription.dosage}</p>
                                             </div>
                                             <div>
                                                 <p className="text-lg text-gray-500">Frequency</p>
+=======
+                                                <p className="text-sm text-gray-500">Dosage</p>
+                                                <p className="font-medium">{prescription.dosage}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-500">Frequency</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <p className="font-medium">{prescription.frequency}</p>
                                             </div>
                                         </div>
 
                                         <div className="mt-4">
+<<<<<<< HEAD
                                             <p className="text-lg text-gray-500">Instructions</p>
+=======
+                                            <p className="text-sm text-gray-500">Instructions</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <p className="text-gray-700">{prescription.instructions}</p>
                                         </div>
                                     </div>

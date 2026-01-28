@@ -349,7 +349,11 @@ const PatientList = () => {
                                     <FaUserPlus className="text-blue-600 text-xl" />
                                 </div>
                                 <div className="ml-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Total Patients</p>
+=======
+                                    <p className="text-sm text-gray-500">Total Patients</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold text-gray-900">{patients.length}</p>
                                 </div>
                             </div>
@@ -361,7 +365,11 @@ const PatientList = () => {
                                     <FiUserCheck className="text-green-600 text-xl" />
                                 </div>
                                 <div className="ml-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Active Patients</p>
+=======
+                                    <p className="text-sm text-gray-500">Active Patients</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold text-gray-900">
                                         {patients.filter(p => p.status === 'active').length}
                                     </p>
@@ -375,7 +383,11 @@ const PatientList = () => {
                                     <FaCalendarPlus className="text-yellow-600 text-xl" />
                                 </div>
                                 <div className="ml-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Today's Appointments</p>
+=======
+                                    <p className="text-sm text-gray-500">Today's Appointments</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold text-gray-900">0</p>
                                 </div>
                             </div>
@@ -387,7 +399,11 @@ const PatientList = () => {
                                     <MdBloodtype className="text-purple-600 text-xl" />
                                 </div>
                                 <div className="ml-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Without Blood Group</p>
+=======
+                                    <p className="text-sm text-gray-500">Without Blood Group</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold text-gray-900">
                                         {patients.filter(p => !p.bloodGroup).length}
                                     </p>
@@ -536,7 +552,11 @@ const PatientList = () => {
                                                     <div className="text-gray-400">
                                                         <FaSearch className="text-4xl mx-auto mb-3" />
                                                         <p className="text-lg">No patients found</p>
+<<<<<<< HEAD
                                                         <p className="text-lg mt-1">Try adjusting your search or filter</p>
+=======
+                                                        <p className="text-sm mt-1">Try adjusting your search or filter</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     </div>
                                                 </td>
                                             </tr>
@@ -544,7 +564,11 @@ const PatientList = () => {
                                             currentItems.map((patient) => (
                                                 <tr key={patient._id} className="hover:bg-gray-50">
                                                     <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                         <div className="text-lg font-medium text-blue-600">
+=======
+                                                        <div className="text-sm font-medium text-blue-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                             {patient.patientId}
                                                         </div>
                                                     </td>
@@ -556,33 +580,55 @@ const PatientList = () => {
                                                                 </span>
                                                             </div>
                                                             <div className="ml-4">
+<<<<<<< HEAD
                                                                 <div className="text-lg font-medium text-gray-900">
                                                                     {patient.userId?.firstName} {patient.userId?.lastName}
                                                                 </div>
                                                                 <div className="text-lg text-gray-500">
+=======
+                                                                <div className="text-sm font-medium text-gray-900">
+                                                                    {patient.userId?.firstName} {patient.userId?.lastName}
+                                                                </div>
+                                                                <div className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                                     {patient.userId?.email}
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                         <div className="text-lg text-gray-900">
                                                             {calculateAge(patient.userId?.dateOfBirth)} years
                                                         </div>
                                                         <div className="text-lg text-gray-500">
+=======
+                                                        <div className="text-sm text-gray-900">
+                                                            {calculateAge(patient.userId?.dateOfBirth)} years
+                                                        </div>
+                                                        <div className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                             {patient.userId?.gender || 'Not specified'}
                                                         </div>
                                                     </td>
                                                     <td className="px-6 py-4 whitespace-nowrap">
                                                         <div className="flex flex-col space-y-1">
                                                             {patient.userId?.phoneNumber && (
+<<<<<<< HEAD
                                                                 <div className="flex items-center text-lg text-gray-600">
+=======
+                                                                <div className="flex items-center text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                                     <FaPhone className="mr-2 text-gray-400" />
                                                                     {patient.userId.phoneNumber}
                                                                 </div>
                                                             )}
                                                             {patient.emergencyContact?.phoneNumber && (
+<<<<<<< HEAD
                                                                 <div className="flex items-center text-lg text-gray-600">
+=======
+                                                                <div className="flex items-center text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                                     <MdEmergency className="mr-2 text-red-400" />
                                                                     {patient.emergencyContact.name} ({patient.emergencyContact.relationship})
                                                                 </div>
@@ -592,13 +638,21 @@ const PatientList = () => {
                                                     <td className="px-6 py-4 whitespace-nowrap">
                                                         <div className="flex flex-col space-y-1">
                                                             {patient.bloodGroup && (
+<<<<<<< HEAD
                                                                 <div className="flex items-center text-lg">
+=======
+                                                                <div className="flex items-center text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                                     <MdBloodtype className="mr-2 text-red-500" />
                                                                     <span className="font-medium">{patient.bloodGroup}</span>
                                                                 </div>
                                                             )}
                                                             {(patient.height || patient.weight) && (
+<<<<<<< HEAD
                                                                 <div className="text-lg text-gray-600">
+=======
+                                                                <div className="text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                                     {patient.height && `${patient.height} cm`}
                                                                     {patient.height && patient.weight && ' • '}
                                                                     {patient.weight && `${patient.weight} kg`}
@@ -606,7 +660,11 @@ const PatientList = () => {
                                                             )}
                                                         </div>
                                                     </td>
+<<<<<<< HEAD
                                                     <td className="px-6 py-4 whitespace-nowrap text-lg text-gray-500">
+=======
+                                                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         {new Date(patient.createdAt).toLocaleDateString()}
                                                         <div className="text-xs text-gray-400">
                                                             {new Date(patient.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
@@ -615,7 +673,11 @@ const PatientList = () => {
                                                     <td className="px-6 py-4 whitespace-nowrap">
                                                         <StatusBadge status={patient.status || 'active'} />
                                                     </td>
+<<<<<<< HEAD
                                                     <td className="px-6 py-4 whitespace-nowrap text-lg font-medium">
+=======
+                                                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         <div className="flex space-x-2">
                                                             <button
                                                                 onClick={() => openQuickView(patient)}
@@ -670,7 +732,11 @@ const PatientList = () => {
                                 <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
                                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                                         <div className="mb-4 md:mb-0">
+<<<<<<< HEAD
                                             <p className="text-lg text-gray-700">
+=======
+                                            <p className="text-sm text-gray-700">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Showing <span className="font-medium">{indexOfFirstItem + 1}</span> to{' '}
                                                 <span className="font-medium">
                                                     {Math.min(indexOfLastItem, filteredPatients.length)}
@@ -682,7 +748,11 @@ const PatientList = () => {
                                             <button
                                                 onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                                                 disabled={currentPage === 1}
+<<<<<<< HEAD
                                                 className="px-3 py-1 border border-gray-300 rounded-md text-lg font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+=======
+                                                className="px-3 py-1 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             >
                                                 <FiChevronLeft className="mr-1" />
                                                 Previous
@@ -701,7 +771,11 @@ const PatientList = () => {
                                                             <button
                                                                 key={pageNumber}
                                                                 onClick={() => setCurrentPage(pageNumber)}
+<<<<<<< HEAD
                                                                 className={`px-3 py-1 text-lg font-medium rounded-md ${currentPage === pageNumber
+=======
+                                                                className={`px-3 py-1 text-sm font-medium rounded-md ${currentPage === pageNumber
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                                     ? 'bg-blue-600 text-white'
                                                                     : 'border border-gray-300 text-gray-700 hover:bg-gray-50'
                                                                     }`}
@@ -730,7 +804,11 @@ const PatientList = () => {
                                             <button
                                                 onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                                                 disabled={currentPage === totalPages}
+<<<<<<< HEAD
                                                 className="px-3 py-1 border border-gray-300 rounded-md text-lg font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+=======
+                                                className="px-3 py-1 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             >
                                                 Next
                                                 <FiChevronRight className="ml-1" />
@@ -753,7 +831,11 @@ const PatientList = () => {
                                 <FaTrash className="h-6 w-6 text-red-600" />
                             </div>
                             <h3 className="text-lg font-medium text-gray-900 mb-2">Delete Patient</h3>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500 mb-4">
+=======
+                            <p className="text-sm text-gray-500 mb-4">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 Are you sure you want to delete <strong>{patientToDelete.userId?.firstName} {patientToDelete.userId?.lastName}</strong>?
                                 This action cannot be undone.
                             </p>
@@ -764,13 +846,21 @@ const PatientList = () => {
                                     setShowDeleteModal(false);
                                     setPatientToDelete(null);
                                 }}
+<<<<<<< HEAD
                                 className="px-4 py-2 border border-gray-300 rounded-md text-lg font-medium text-gray-700 hover:bg-gray-50"
+=======
+                                className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 Cancel
                             </button>
                             <button
                                 onClick={handleDelete}
+<<<<<<< HEAD
                                 className="px-4 py-2 bg-red-600 text-white rounded-md text-lg font-medium hover:bg-red-700"
+=======
+                                className="px-4 py-2 bg-red-600 text-white rounded-md text-sm font-medium hover:bg-red-700"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 Delete Patient
                             </button>
@@ -788,7 +878,11 @@ const PatientList = () => {
                                 <h3 className="text-lg font-medium text-gray-900">
                                     Patient Details
                                 </h3>
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500">{selectedPatient.patientId}</p>
+=======
+                                <p className="text-sm text-gray-500">{selectedPatient.patientId}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                             <button
                                 onClick={() => setShowQuickView(false)}
@@ -838,8 +932,13 @@ const PatientList = () => {
                                     </div>
                                     {selectedPatient.userId?.address && (
                                         <div>
+<<<<<<< HEAD
                                             <div className="text-gray-600 text-lg mb-1">Address:</div>
                                             <div className="text-lg">
+=======
+                                            <div className="text-gray-600 text-sm mb-1">Address:</div>
+                                            <div className="text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 {selectedPatient.userId.address.street && (
                                                     <div>{selectedPatient.userId.address.street}</div>
                                                 )}
@@ -872,8 +971,13 @@ const PatientList = () => {
                                     </div>
                                     {selectedPatient.allergies && selectedPatient.allergies.length > 0 && (
                                         <div>
+<<<<<<< HEAD
                                             <div className="text-gray-600 text-lg mb-1">Allergies:</div>
                                             <div className="text-lg">{selectedPatient.allergies.join(', ')}</div>
+=======
+                                            <div className="text-gray-600 text-sm mb-1">Allergies:</div>
+                                            <div className="text-sm">{selectedPatient.allergies.join(', ')}</div>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </div>
                                     )}
                                 </div>
@@ -898,7 +1002,11 @@ const PatientList = () => {
                                         </div>
                                     </div>
                                 ) : (
+<<<<<<< HEAD
                                     <p className="text-gray-500 text-lg">No emergency contact provided</p>
+=======
+                                    <p className="text-gray-500 text-sm">No emergency contact provided</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 )}
                             </div>
 
@@ -908,16 +1016,28 @@ const PatientList = () => {
                                     <h4 className="font-medium text-gray-700 mb-3 pb-2 border-b">Insurance Information</h4>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                         <div>
+<<<<<<< HEAD
                                             <div className="text-gray-600 text-lg mb-1">Provider:</div>
                                             <div className="font-medium">{selectedPatient.insuranceProvider.providerName}</div>
                                         </div>
                                         <div>
                                             <div className="text-gray-600 text-lg mb-1">Policy Number:</div>
+=======
+                                            <div className="text-gray-600 text-sm mb-1">Provider:</div>
+                                            <div className="font-medium">{selectedPatient.insuranceProvider.providerName}</div>
+                                        </div>
+                                        <div>
+                                            <div className="text-gray-600 text-sm mb-1">Policy Number:</div>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <div className="font-medium">{selectedPatient.insuranceProvider.policyNumber}</div>
                                         </div>
                                         {selectedPatient.insuranceProvider.validUntil && (
                                             <div>
+<<<<<<< HEAD
                                                 <div className="text-gray-600 text-lg mb-1">Valid Until:</div>
+=======
+                                                <div className="text-gray-600 text-sm mb-1">Valid Until:</div>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <div>{new Date(selectedPatient.insuranceProvider.validUntil).toLocaleDateString()}</div>
                                             </div>
                                         )}

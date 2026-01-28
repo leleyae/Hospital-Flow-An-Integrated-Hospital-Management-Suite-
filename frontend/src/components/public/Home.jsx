@@ -132,11 +132,19 @@ const PublicHome = () => {
                             <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                                 <div className="flex items-center justify-between mb-4">
                                     <h3 className="text-lg font-bold">{dept.name}</h3>
+<<<<<<< HEAD
                                     <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-lg">
                                         {dept.doctors} Doctors
                                     </span>
                                 </div>
                                 <div className="flex items-center text-lg text-gray-600">
+=======
+                                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+                                        {dept.doctors} Doctors
+                                    </span>
+                                </div>
+                                <div className="flex items-center text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <Clock className="w-4 h-4 mr-2" />
                                     <span>24/7 Emergency Services Available</span>
                                 </div>

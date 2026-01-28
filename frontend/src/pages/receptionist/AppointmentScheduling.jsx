@@ -232,7 +232,11 @@ const AppointmentScheduling = () => {
                                         <h3 className="font-semibold text-gray-900">
                                             {selectedPatient.userId?.firstName} {selectedPatient.userId?.lastName}
                                         </h3>
+<<<<<<< HEAD
                                         <div className="text-lg text-gray-600 mt-1 space-y-1">
+=======
+                                        <div className="text-sm text-gray-600 mt-1 space-y-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <p><strong>Patient ID:</strong> {selectedPatient.patientId}</p>
                                             <p><strong>Phone:</strong> {selectedPatient.userId?.phoneNumber || 'Not provided'}</p>
                                             <p><strong>Email:</strong> {selectedPatient.userId?.email || 'Not provided'}</p>
@@ -255,7 +259,11 @@ const AppointmentScheduling = () => {
                                     </div>
                                     <button
                                         onClick={() => setSelectedPatient(null)}
+<<<<<<< HEAD
                                         className="text-red-600 hover:text-red-800 text-lg"
+=======
+                                        className="text-red-600 hover:text-red-800 text-sm"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     >
                                         Change Patient
                                     </button>
@@ -294,7 +302,11 @@ const AppointmentScheduling = () => {
                                     )}
                                     <button
                                         onClick={searchPatients}
+<<<<<<< HEAD
                                         className="absolute right-2 top-1/2 transform -translate-y-1/2 px-3 py-1 bg-blue-600 text-white rounded text-lg hover:bg-blue-700"
+=======
+                                        className="absolute right-2 top-1/2 transform -translate-y-1/2 px-3 py-1 bg-blue-600 text-white rounded text-sm hover:bg-blue-700"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     >
                                         Search
                                     </button>
@@ -316,19 +328,31 @@ const AppointmentScheduling = () => {
                                                             <h4 className="font-medium text-gray-900">
                                                                 {patient.userId?.firstName} {patient.userId?.lastName}
                                                             </h4>
+<<<<<<< HEAD
                                                             <div className="text-lg text-gray-500 mt-1 space-x-2">
+=======
+                                                            <div className="text-sm text-gray-500 mt-1 space-x-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                                 <span className="font-mono bg-gray-100 px-2 py-1 rounded">
                                                                     ID: {patient.patientId}
                                                                 </span>
                                                                 {patient.userId?.phoneNumber && (
                                                                     <span className="flex items-center">
+<<<<<<< HEAD
                                                                         <FaPhone className="inline mr-1 text-lg" />
+=======
+                                                                        <FaPhone className="inline mr-1 text-xs" />
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                                         {patient.userId.phoneNumber}
                                                                     </span>
                                                                 )}
                                                             </div>
                                                         </div>
+<<<<<<< HEAD
                                                         <span className="text-blue-600 font-medium text-lg">Select</span>
+=======
+                                                        <span className="text-blue-600 font-medium text-sm">Select</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     </div>
                                                 </div>
                                             ))}
@@ -355,7 +379,11 @@ const AppointmentScheduling = () => {
                                                         <h4 className="font-medium text-gray-900">
                                                             {patient.userId?.firstName} {patient.userId?.lastName}
                                                         </h4>
+<<<<<<< HEAD
                                                         <div className="text-lg text-gray-500 mt-1">
+=======
+                                                        <div className="text-sm text-gray-500 mt-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                             <span className="font-mono bg-gray-100 px-2 py-1 rounded">
                                                                 {patient.patientId}
                                                             </span>
@@ -378,14 +406,22 @@ const AppointmentScheduling = () => {
                                     <div className="text-center py-8 text-gray-500">
                                         <FaSearch className="text-3xl mx-auto mb-2 opacity-50" />
                                         <p>No patients found</p>
+<<<<<<< HEAD
                                         <p className="text-lg mt-1">Try a different search term</p>
+=======
+                                        <p className="text-sm mt-1">Try a different search term</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
                                 )}
 
                                 <div className="mt-4 text-center">
                                     <button
                                         onClick={() => navigate('/receptionist/register-patient')}
+<<<<<<< HEAD
                                         className="text-blue-600 hover:text-blue-800 text-lg"
+=======
+                                        className="text-blue-600 hover:text-blue-800 text-sm"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     >
                                         Register a new patient instead
                                     </button>
@@ -404,7 +440,11 @@ const AppointmentScheduling = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Doctor Selection */}
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <FaUserMd className="inline mr-1" />
                                     Select Doctor *
                                 </label>
@@ -426,7 +466,11 @@ const AppointmentScheduling = () => {
 
                             {/* Appointment Type */}
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Appointment Type
                                 </label>
                                 <select
@@ -445,7 +489,11 @@ const AppointmentScheduling = () => {
 
                             {/* Date and Time */}
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <FiCalendar className="inline mr-1" />
                                     Appointment Date *
                                 </label>
@@ -460,7 +508,11 @@ const AppointmentScheduling = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <FiClock className="inline mr-1" />
                                     Appointment Time *
                                 </label>
@@ -474,12 +526,20 @@ const AppointmentScheduling = () => {
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     required
                                 />
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500 mt-1">Clinic hours: 8:00 AM - 6:00 PM</p>
+=======
+                                <p className="text-xs text-gray-500 mt-1">Clinic hours: 8:00 AM - 6:00 PM</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
 
                             {/* Reason */}
                             <div className="md:col-span-2">
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Reason for Appointment *
                                 </label>
                                 <input
@@ -494,7 +554,11 @@ const AppointmentScheduling = () => {
 
                             {/* Notes */}
                             <div className="md:col-span-2">
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Additional Notes (Optional)
                                 </label>
                                 <textarea
@@ -515,7 +579,11 @@ const AppointmentScheduling = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {selectedPatient && (
                                 <div>
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-600">Patient:</p>
+=======
+                                    <p className="text-sm text-gray-600">Patient:</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="font-medium">
                                         {selectedPatient.userId?.firstName} {selectedPatient.userId?.lastName}
                                     </p>
@@ -524,7 +592,11 @@ const AppointmentScheduling = () => {
 
                             {selectedDoctor && (
                                 <div>
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-600">Doctor:</p>
+=======
+                                    <p className="text-sm text-gray-600">Doctor:</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="font-medium">
                                         {(() => {
                                             const doctor = doctors.find(d => d._id === selectedDoctor);
@@ -536,7 +608,11 @@ const AppointmentScheduling = () => {
 
                             {appointmentDate && (
                                 <div>
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-600">Date:</p>
+=======
+                                    <p className="text-sm text-gray-600">Date:</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="font-medium">
                                         {new Date(appointmentDate).toLocaleDateString('en-US', {
                                             weekday: 'long',
@@ -550,7 +626,11 @@ const AppointmentScheduling = () => {
 
                             {appointmentTime && (
                                 <div>
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-600">Time:</p>
+=======
+                                    <p className="text-sm text-gray-600">Time:</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="font-medium">
                                         {new Date(`2000-01-01T${appointmentTime}`).toLocaleTimeString('en-US', {
                                             hour: '2-digit',
@@ -563,7 +643,11 @@ const AppointmentScheduling = () => {
 
                         {reason && (
                             <div className="mt-4">
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-600">Reason:</p>
+=======
+                                <p className="text-sm text-gray-600">Reason:</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 <p className="font-medium">{reason}</p>
                             </div>
                         )}

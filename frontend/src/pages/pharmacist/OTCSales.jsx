@@ -6,8 +6,12 @@ import {
     TrashIcon,
     ShoppingCartIcon,
     UserIcon,
+<<<<<<< HEAD
     CalculatorIcon,
     XMarkIcon
+=======
+    CalculatorIcon
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
 } from '@heroicons/react/24/outline';
 
 const OTCSales = () => {
@@ -178,6 +182,7 @@ const OTCSales = () => {
                                                     <div>
                                                         <h4 className="font-medium text-gray-900">{medicine.medicineName}</h4>
                                                         {medicine.genericName && (
+<<<<<<< HEAD
                                                             <p className="text-lg text-gray-600">{medicine.genericName}</p>
                                                         )}
                                                     </div>
@@ -186,11 +191,25 @@ const OTCSales = () => {
                                                             ${medicine.unitPrice?.toFixed(2)}
                                                         </p>
                                                         <p className={`text-lg ${inStock ? 'text-green-600' : 'text-red-600'
+=======
+                                                            <p className="text-sm text-gray-600">{medicine.genericName}</p>
+                                                        )}
+                                                    </div>
+                                                    <div className="text-right">
+                                                        <p className="text-sm font-medium text-gray-900">
+                                                            ${medicine.unitPrice?.toFixed(2)}
+                                                        </p>
+                                                        <p className={`text-xs ${inStock ? 'text-green-600' : 'text-red-600'
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                             }`}>
                                                             {inStock ? `Stock: ${medicine.quantity} ${medicine.unit}` : 'Out of Stock'}
                                                         </p>
                                                         {inCart && (
+<<<<<<< HEAD
                                                             <p className="text-lg text-blue-600">In cart: {inCart.quantity}</p>
+=======
+                                                            <p className="text-xs text-blue-600">In cart: {inCart.quantity}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         )}
                                                     </div>
                                                 </div>
@@ -214,9 +233,15 @@ const OTCSales = () => {
                                                 <div className="flex-1">
                                                     <h4 className="font-medium text-gray-900">{item.medicineName}</h4>
                                                     {item.genericName && (
+<<<<<<< HEAD
                                                         <p className="text-lg text-gray-600">{item.genericName}</p>
                                                     )}
                                                     <p className="text-lg text-gray-500">Batch: {item.batchNumber}</p>
+=======
+                                                        <p className="text-sm text-gray-600">{item.genericName}</p>
+                                                    )}
+                                                    <p className="text-sm text-gray-500">Batch: {item.batchNumber}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 </div>
                                                 <div className="flex items-center space-x-4">
                                                     <div className="flex items-center space-x-2">
@@ -240,7 +265,11 @@ const OTCSales = () => {
                                                         <p className="font-medium text-gray-900">
                                                             ${(item.unitPrice * item.quantity).toFixed(2)}
                                                         </p>
+<<<<<<< HEAD
                                                         <p className="text-lg text-gray-600">
+=======
+                                                        <p className="text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                             ${item.unitPrice?.toFixed(2)} each
                                                         </p>
                                                     </div>
@@ -258,7 +287,11 @@ const OTCSales = () => {
                                     <div className="text-center py-8">
                                         <ShoppingCartIcon className="h-12 w-12 text-gray-400 mx-auto mb-3" />
                                         <p className="text-gray-500">Your cart is empty</p>
+<<<<<<< HEAD
                                         <p className="text-lg text-gray-400 mt-1">Search and add medicines to cart</p>
+=======
+                                        <p className="text-sm text-gray-400 mt-1">Search and add medicines to cart</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
                                 )}
                             </div>
@@ -275,7 +308,11 @@ const OTCSales = () => {
                             </h3>
                             <div className="space-y-3">
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Patient ID
                                     </label>
                                     <input
@@ -288,7 +325,11 @@ const OTCSales = () => {
                                 </div>
                                 {patientInfo && (
                                     <div className="bg-blue-50 p-3 rounded-lg">
+<<<<<<< HEAD
                                         <p className="text-lg text-blue-800">
+=======
+                                        <p className="text-sm text-blue-800">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Patient: {patientInfo.name}
                                         </p>
                                     </div>
@@ -304,7 +345,11 @@ const OTCSales = () => {
                             </h3>
                             <div className="space-y-3">
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Payment Method
                                     </label>
                                     <select
@@ -319,7 +364,11 @@ const OTCSales = () => {
                                     </select>
                                 </div>
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Discount ($)
                                     </label>
                                     <input
@@ -332,7 +381,11 @@ const OTCSales = () => {
                                     />
                                 </div>
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Notes (Optional)
                                     </label>
                                     <textarea
@@ -350,11 +403,19 @@ const OTCSales = () => {
                         <div className="bg-white rounded-lg shadow p-6">
                             <h3 className="text-lg font-medium text-gray-900 mb-4">Order Summary</h3>
                             <div className="space-y-2">
+<<<<<<< HEAD
                                 <div className="flex justify-between text-lg">
                                     <span className="text-gray-600">Subtotal</span>
                                     <span className="text-gray-900">${calculateTotal().toFixed(2)}</span>
                                 </div>
                                 <div className="flex justify-between text-lg">
+=======
+                                <div className="flex justify-between text-sm">
+                                    <span className="text-gray-600">Subtotal</span>
+                                    <span className="text-gray-900">${calculateTotal().toFixed(2)}</span>
+                                </div>
+                                <div className="flex justify-between text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <span className="text-gray-600">Discount</span>
                                     <span className="text-red-600">-${parseFloat(discount).toFixed(2)}</span>
                                 </div>
@@ -390,7 +451,11 @@ const OTCSales = () => {
                             <div className="flex space-x-2">
                                 <button
                                     onClick={printReceipt}
+<<<<<<< HEAD
                                     className="px-3 py-1 text-lg bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200"
+=======
+                                    className="px-3 py-1 text-sm bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 >
                                     Print
                                 </button>
@@ -416,10 +481,17 @@ const OTCSales = () => {
                             {receiptData.patient && (
                                 <div className="mb-6 p-3 bg-gray-50 rounded-lg">
                                     <h4 className="font-medium text-gray-900 mb-2">Patient Information</h4>
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-600">
                                         Name: {receiptData.patient.userId.firstName} {receiptData.patient.userId.lastName}
                                     </p>
                                     <p className="text-lg text-gray-600">
+=======
+                                    <p className="text-sm text-gray-600">
+                                        Name: {receiptData.patient.userId.firstName} {receiptData.patient.userId.lastName}
+                                    </p>
+                                    <p className="text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Patient ID: {receiptData.patient.patientId}
                                     </p>
                                 </div>
@@ -430,7 +502,11 @@ const OTCSales = () => {
                                 <h4 className="font-medium text-gray-900 mb-3">Items Purchased</h4>
                                 <div className="space-y-2">
                                     {receiptData.items.map((item, index) => (
+<<<<<<< HEAD
                                         <div key={index} className="flex justify-between text-lg">
+=======
+                                        <div key={index} className="flex justify-between text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <div>
                                                 <span className="font-medium">{item.medicineName}</span>
                                                 <p className="text-gray-600">
@@ -465,11 +541,19 @@ const OTCSales = () => {
 
                             {/* Payment Details */}
                             <div className="mt-6 p-3 bg-gray-50 rounded-lg">
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-600">
                                     Payment Method: {receiptData.paymentMethod.toUpperCase()}
                                 </p>
                                 {receiptData.transactionId && (
                                     <p className="text-lg text-gray-600">
+=======
+                                <p className="text-sm text-gray-600">
+                                    Payment Method: {receiptData.paymentMethod.toUpperCase()}
+                                </p>
+                                {receiptData.transactionId && (
+                                    <p className="text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Transaction ID: {receiptData.transactionId}
                                     </p>
                                 )}
@@ -477,8 +561,13 @@ const OTCSales = () => {
 
                             {/* Footer */}
                             <div className="text-center mt-8 pt-4 border-t border-gray-200">
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500">Thank you for your purchase!</p>
                                 <p className="text-lg text-gray-400 mt-2">
+=======
+                                <p className="text-sm text-gray-500">Thank you for your purchase!</p>
+                                <p className="text-xs text-gray-400 mt-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Please retain this receipt for your records
                                 </p>
                             </div>

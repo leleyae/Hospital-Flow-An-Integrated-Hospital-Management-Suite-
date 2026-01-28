@@ -21,7 +21,10 @@ const PatientAppointments = () => {
             // Fetch patient details
             const patientResponse = await doctorService.getPatientById(patientId);
             setPatient(patientResponse);
+<<<<<<< HEAD
             console.log(patientResponse)
+=======
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
 
             // Fetch patient appointments
             const appointmentsResponse = await doctorService.getPatientAppointments(patientId);
@@ -84,7 +87,11 @@ const PatientAppointments = () => {
                     </div>
                 </div>
 
+<<<<<<< HEAD
                 <div className="flex items-center space-x-4 text-lg text-gray-600">
+=======
+                <div className="flex items-center space-x-4 text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <span>📧 {patient?.userId?.email}</span>
                     <span>📞 {patient?.userId?.phoneNumber || 'N/A'}</span>
                     {patient?.bloodGroup && <span>🩸 Blood Group: {patient.bloodGroup}</span>}
@@ -95,7 +102,11 @@ const PatientAppointments = () => {
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
                 <div className="px-6 py-4 border-b border-gray-200">
                     <h2 className="text-lg font-semibold text-gray-900">Appointments</h2>
+<<<<<<< HEAD
                     <p className="text-lg text-gray-600">All appointments with this patient</p>
+=======
+                    <p className="text-sm text-gray-600">All appointments with this patient</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                 </div>
 
                 <div className="divide-y divide-gray-200">
@@ -111,6 +122,7 @@ const PatientAppointments = () => {
                                         <div className="flex items-center space-x-3">
                                             <Calendar className="w-4 h-4 text-gray-400" />
                                             <span className="font-medium text-gray-900">
+<<<<<<< HEAD
                                                 {patient?.userId?.firstName} {patient?.userId?.lastName}
                                             </span>
                                         </div>
@@ -118,11 +130,24 @@ const PatientAppointments = () => {
                                             <Clock className="w-4 h-4" />
                                             <span>{appointment.startTime} - {appointment.endTime}</span>
                                             <span className={`px-2 py-1 rounded-full text-lg ${getStatusColor(appointment.status)}`}>
+=======
+                                                {formatDate(appointment.appointmentDate)}
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center space-x-3 mt-2 text-sm text-gray-600">
+                                            <Clock className="w-4 h-4" />
+                                            <span>{appointment.startTime} - {appointment.endTime}</span>
+                                            <span className={`px-2 py-1 rounded-full text-xs ${getStatusColor(appointment.status)}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 {appointment.status}
                                             </span>
                                         </div>
                                         {appointment.reason && (
+<<<<<<< HEAD
                                             <p className="mt-2 text-lg text-gray-700">{appointment.reason}</p>
+=======
+                                            <p className="mt-2 text-sm text-gray-700">{appointment.reason}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         )}
                                     </div>
                                     <ChevronRight className="w-5 h-5 text-gray-400" />
@@ -142,17 +167,29 @@ const PatientAppointments = () => {
             {/* Quick Stats */}
             <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-blue-600 font-medium">Total Appointments</p>
                     <p className="text-2xl font-bold text-blue-900">{appointments.length}</p>
                 </div>
                 <div className="bg-green-50 p-4 rounded-lg">
                     <p className="text-lg text-green-600 font-medium">Completed</p>
+=======
+                    <p className="text-sm text-blue-600 font-medium">Total Appointments</p>
+                    <p className="text-2xl font-bold text-blue-900">{appointments.length}</p>
+                </div>
+                <div className="bg-green-50 p-4 rounded-lg">
+                    <p className="text-sm text-green-600 font-medium">Completed</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-green-900">
                         {appointments.filter(a => a.status === 'completed').length}
                     </p>
                 </div>
                 <div className="bg-yellow-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-yellow-600 font-medium">Upcoming</p>
+=======
+                    <p className="text-sm text-yellow-600 font-medium">Upcoming</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-yellow-900">
                         {appointments.filter(a => a.status === 'pending' || a.status === 'confirmed').length}
                     </p>

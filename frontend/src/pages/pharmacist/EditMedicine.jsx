@@ -229,8 +229,13 @@ const EditMedicine = () => {
                 {/* Header */}
                 <div className="mb-8">
                     <button
+<<<<<<< HEAD
                         onClick={() => navigate('/pharmacist/inventory')}
                         className="inline-flex items-center text-lg font-medium text-blue-600 hover:text-blue-800 mb-4"
+=======
+                        onClick={() => navigate('/pharmacy/inventory')}
+                        className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 mb-4"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     >
                         <ArrowLeftIcon className="h-4 w-4 mr-1" />
                         Back to Inventory
@@ -264,7 +269,11 @@ const EditMedicine = () => {
                                 <CheckCircleIcon className="h-5 w-5 text-green-400" />
                             </div>
                             <div className="ml-3">
+<<<<<<< HEAD
                                 <p className="text-lg text-green-700">{success}</p>
+=======
+                                <p className="text-sm text-green-700">{success}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                         </div>
                     </div>
@@ -277,7 +286,11 @@ const EditMedicine = () => {
                                 <ExclamationTriangleIcon className="h-5 w-5 text-red-400" />
                             </div>
                             <div className="ml-3">
+<<<<<<< HEAD
                                 <p className="text-lg text-red-700">{error}</p>
+=======
+                                <p className="text-sm text-red-700">{error}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                         </div>
                     </div>
@@ -289,7 +302,11 @@ const EditMedicine = () => {
                         <h3 className="text-lg font-medium text-gray-900 mb-4">Update Stock</h3>
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Action
                                 </label>
                                 <select
@@ -305,7 +322,11 @@ const EditMedicine = () => {
                                 </select>
                             </div>
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Quantity
                                 </label>
                                 <input
@@ -318,7 +339,11 @@ const EditMedicine = () => {
                                 />
                             </div>
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Notes
                                 </label>
                                 <input
@@ -349,13 +374,21 @@ const EditMedicine = () => {
                         <div className="mt-4 p-3 bg-gray-50 rounded-lg">
                             <div className="flex justify-between items-center">
                                 <div>
+<<<<<<< HEAD
                                     <span className="text-lg font-medium text-gray-700">Current Stock:</span>
+=======
+                                    <span className="text-sm font-medium text-gray-700">Current Stock:</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <span className="ml-2 text-lg font-bold text-blue-600">
                                         {formData.quantity} {formData.unit}
                                     </span>
                                 </div>
                                 <div>
+<<<<<<< HEAD
                                     <span className="text-lg font-medium text-gray-700">Reorder Level:</span>
+=======
+                                    <span className="text-sm font-medium text-gray-700">Reorder Level:</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <span className="ml-2 text-lg font-medium text-yellow-600">
                                         {formData.reorderLevel} {formData.unit}
                                     </span>
@@ -378,7 +411,11 @@ const EditMedicine = () => {
                                     </h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Medicine Name *
                                             </label>
                                             <input
@@ -392,7 +429,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Generic Name
                                             </label>
                                             <input
@@ -405,7 +446,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Manufacturer
                                             </label>
                                             <input
@@ -418,7 +463,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Category
                                             </label>
                                             <select
@@ -445,7 +494,11 @@ const EditMedicine = () => {
                                     </h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Batch Number *
                                             </label>
                                             <input
@@ -459,7 +512,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Expiry Date *
                                             </label>
                                             <input
@@ -474,7 +531,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Unit *
                                             </label>
                                             <select
@@ -492,7 +553,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Reorder Level
                                             </label>
                                             <input
@@ -515,7 +580,11 @@ const EditMedicine = () => {
                                     </h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Unit Price (USD) *
                                             </label>
                                             <div className="relative">
@@ -545,7 +614,11 @@ const EditMedicine = () => {
                                     </h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Supplier Name
                                             </label>
                                             <input
@@ -558,7 +631,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Contact Number
                                             </label>
                                             <input
@@ -571,7 +648,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div className="md:col-span-2">
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Address
                                             </label>
                                             <textarea
@@ -592,7 +673,11 @@ const EditMedicine = () => {
                                     </h3>
                                     <div className="space-y-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Storage Conditions
                                             </label>
                                             <textarea
@@ -605,7 +690,11 @@ const EditMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Description
                                             </label>
                                             <textarea
@@ -625,14 +714,22 @@ const EditMedicine = () => {
                                         <button
                                             type="button"
                                             onClick={() => navigate('/pharmacy/inventory')}
+<<<<<<< HEAD
                                             className="px-6 py-3 border border-gray-300 text-lg font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+=======
+                                            className="px-6 py-3 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         >
                                             Cancel
                                         </button>
                                         <button
                                             type="submit"
                                             disabled={updating}
+<<<<<<< HEAD
                                             className={`px-6 py-3 border border-transparent text-lg font-medium rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${updating
+=======
+                                            className={`px-6 py-3 border border-transparent text-sm font-medium rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${updating
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 ? 'bg-blue-400 cursor-not-allowed'
                                                 : 'bg-blue-600 hover:bg-blue-700'
                                                 }`}
@@ -672,11 +769,19 @@ const EditMedicine = () => {
                                 <ExclamationTriangleIcon className="h-6 w-6 text-red-600" />
                             </div>
                             <h4 className="text-lg font-medium text-gray-900 text-center mb-2">Are you sure?</h4>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500 text-center mb-4">
                                 You are about to delete <strong>{formData.medicineName}</strong>. This action cannot be undone.
                             </p>
                             <div className="text-center bg-red-50 p-3 rounded-lg mb-4">
                                 <p className="text-lg text-red-600">
+=======
+                            <p className="text-sm text-gray-500 text-center mb-4">
+                                You are about to delete <strong>{formData.medicineName}</strong>. This action cannot be undone.
+                            </p>
+                            <div className="text-center bg-red-50 p-3 rounded-lg mb-4">
+                                <p className="text-sm text-red-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Current Stock: {formData.quantity} {formData.unit}
                                 </p>
                             </div>
@@ -685,7 +790,11 @@ const EditMedicine = () => {
                             <button
                                 onClick={() => setShowDeleteModal(false)}
                                 disabled={updating}
+<<<<<<< HEAD
                                 className="px-4 py-2 border border-gray-300 text-lg font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50"
+=======
+                                className="px-4 py-2 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 Cancel
                             </button>

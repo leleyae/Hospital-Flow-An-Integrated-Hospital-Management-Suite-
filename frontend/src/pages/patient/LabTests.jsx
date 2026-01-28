@@ -90,7 +90,11 @@ const LabTests = () => {
                             <Clock className="w-6 h-6 text-yellow-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Pending Tests</p>
+=======
+                            <p className="text-sm text-gray-500">Pending Tests</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">2</p>
                         </div>
                     </div>
@@ -102,7 +106,11 @@ const LabTests = () => {
                             <CheckCircle className="w-6 h-6 text-green-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Completed</p>
+=======
+                            <p className="text-sm text-gray-500">Completed</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">8</p>
                         </div>
                     </div>
@@ -114,7 +122,11 @@ const LabTests = () => {
                             <Beaker className="w-6 h-6 text-blue-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">This Month</p>
+=======
+                            <p className="text-sm text-gray-500">This Month</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">3</p>
                         </div>
                     </div>
@@ -126,7 +138,11 @@ const LabTests = () => {
                             <AlertTriangle className="w-6 h-6 text-red-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Abnormal Results</p>
+=======
+                            <p className="text-sm text-gray-500">Abnormal Results</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">1</p>
                         </div>
                     </div>
@@ -139,9 +155,15 @@ const LabTests = () => {
                     {['pending', 'completed', 'all'].map((tab) => (
                         <button
                             key={tab}
+<<<<<<< HEAD
                             className={`py-2 px-1 border-b-2 font-medium text-lg ${activeTab === tab
                                 ? 'border-blue-500 text-blue-600'
                                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+=======
+                            className={`py-2 px-1 border-b-2 font-medium text-sm ${activeTab === tab
+                                    ? 'border-blue-500 text-blue-600'
+                                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 }`}
                             onClick={() => setActiveTab(tab)}
                         >
@@ -203,11 +225,19 @@ const LabTests = () => {
 
                                         <div className="mt-2 grid grid-cols-2 md:grid-cols-4 gap-4">
                                             <div>
+<<<<<<< HEAD
                                                 <p className="text-lg text-gray-500">Test ID</p>
                                                 <p className="font-medium">{test.testId}</p>
                                             </div>
                                             <div>
                                                 <p className="text-lg text-gray-500">Date</p>
+=======
+                                                <p className="text-sm text-gray-500">Test ID</p>
+                                                <p className="font-medium">{test.testId}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-500">Date</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <div className="flex items-center">
                                                     <Calendar className="w-4 h-4 text-gray-400 mr-1" />
                                                     <span>{test.date}</span>
@@ -215,13 +245,21 @@ const LabTests = () => {
                                             </div>
                                             {test.completedDate && (
                                                 <div>
+<<<<<<< HEAD
                                                     <p className="text-lg text-gray-500">Completed</p>
+=======
+                                                    <p className="text-sm text-gray-500">Completed</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     <p>{test.completedDate}</p>
                                                 </div>
                                             )}
                                             {test.doctor && (
                                                 <div>
+<<<<<<< HEAD
                                                     <p className="text-lg text-gray-500">Doctor</p>
+=======
+                                                    <p className="text-sm text-gray-500">Doctor</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     <p>{test.doctor}</p>
                                                 </div>
                                             )}
@@ -229,10 +267,17 @@ const LabTests = () => {
 
                                         {test.instructions && (
                                             <div className="mt-4">
+<<<<<<< HEAD
                                                 <p className="text-lg text-gray-500">Instructions</p>
                                                 <p className="text-gray-700">{test.instructions}</p>
                                                 {test.location && (
                                                     <p className="text-lg text-gray-600 mt-1">
+=======
+                                                <p className="text-sm text-gray-500">Instructions</p>
+                                                <p className="text-gray-700">{test.instructions}</p>
+                                                {test.location && (
+                                                    <p className="text-sm text-gray-600 mt-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         <span className="font-medium">Location:</span> {test.location}
                                                     </p>
                                                 )}
@@ -241,11 +286,19 @@ const LabTests = () => {
 
                                         {test.results && (
                                             <div className="mt-4">
+<<<<<<< HEAD
                                                 <p className="text-lg text-gray-500">Results</p>
                                                 <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
                                                     <p className="font-medium text-green-800">{test.results}</p>
                                                     {test.notes && (
                                                         <p className="text-lg text-green-700 mt-1">{test.notes}</p>
+=======
+                                                <p className="text-sm text-gray-500">Results</p>
+                                                <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
+                                                    <p className="font-medium text-green-800">{test.results}</p>
+                                                    {test.notes && (
+                                                        <p className="text-sm text-green-700 mt-1">{test.notes}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     )}
                                                 </div>
                                             </div>
@@ -289,13 +342,22 @@ const LabTests = () => {
                 <div className="space-y-4">
                     <div>
                         <div className="flex justify-between mb-1">
+<<<<<<< HEAD
                             <span className="text-lg font-medium">Blood Glucose (mg/dL)</span>
                             <span className="text-lg text-gray-500">Last 6 months</span>
+=======
+                            <span className="text-sm font-medium">Blood Glucose (mg/dL)</span>
+                            <span className="text-sm text-gray-500">Last 6 months</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
                             <div className="bg-green-500 h-2 rounded-full" style={{ width: '85%' }}></div>
                         </div>
+<<<<<<< HEAD
                         <div className="flex justify-between text-lg text-gray-600 mt-1">
+=======
+                        <div className="flex justify-between text-sm text-gray-600 mt-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <span>Jan: 95</span>
                             <span>Feb: 98</span>
                             <span>Mar: 92</span>
@@ -307,13 +369,22 @@ const LabTests = () => {
 
                     <div>
                         <div className="flex justify-between mb-1">
+<<<<<<< HEAD
                             <span className="text-lg font-medium">Cholesterol (mg/dL)</span>
                             <span className="text-lg text-gray-500">Last 6 months</span>
+=======
+                            <span className="text-sm font-medium">Cholesterol (mg/dL)</span>
+                            <span className="text-sm text-gray-500">Last 6 months</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
                             <div className="bg-yellow-500 h-2 rounded-full" style={{ width: '70%' }}></div>
                         </div>
+<<<<<<< HEAD
                         <div className="flex justify-between text-lg text-gray-600 mt-1">
+=======
+                        <div className="flex justify-between text-sm text-gray-600 mt-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <span>Jan: 180</span>
                             <span>Feb: 175</span>
                             <span>Mar: 182</span>

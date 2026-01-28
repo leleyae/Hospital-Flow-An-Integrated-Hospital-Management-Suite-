@@ -116,7 +116,11 @@ const Telemedicine = () => {
                                             {isVideoOff ? (
                                                 <div className="text-center">
                                                     <VideoOff className="w-8 h-8 text-gray-400 mx-auto mb-2" />
+<<<<<<< HEAD
                                                     <p className="text-lg text-gray-400">Camera Off</p>
+=======
+                                                    <p className="text-sm text-gray-400">Camera Off</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 </div>
                                             ) : (
                                                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto">
@@ -212,7 +216,11 @@ const Telemedicine = () => {
                     <div className="bg-white rounded-xl shadow-md p-6">
                         <div className="flex items-center justify-between mb-6">
                             <h3 className="text-lg font-bold text-gray-900">Active Calls</h3>
+<<<<<<< HEAD
                             <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-lg font-medium">
+=======
+                            <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 {activeCalls.length} Active
                             </span>
                         </div>
@@ -228,7 +236,11 @@ const Telemedicine = () => {
                                                 </div>
                                                 <div>
                                                     <h4 className="font-medium text-gray-900">{call.patientName}</h4>
+<<<<<<< HEAD
                                                     <p className="text-lg text-gray-500">{call.patientId}</p>
+=======
+                                                    <p className="text-sm text-gray-500">{call.patientId}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 </div>
                                             </div>
                                             <div className="flex items-center space-x-2">
@@ -236,10 +248,17 @@ const Telemedicine = () => {
                                                     <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75"></span>
                                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                                                 </span>
+<<<<<<< HEAD
                                                 <span className="text-lg text-green-600">Live</span>
                                             </div>
                                         </div>
                                         <div className="flex items-center justify-between text-lg text-gray-600">
+=======
+                                                <span className="text-sm text-green-600">Live</span>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-center justify-between text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <div className="flex items-center">
                                                 <Clock className="w-3 h-3 mr-1" />
                                                 Started: {call.startTime}
@@ -265,7 +284,11 @@ const Telemedicine = () => {
                     <div className="bg-white rounded-xl shadow-md p-6">
                         <div className="flex items-center justify-between mb-6">
                             <h3 className="text-lg font-bold text-gray-900">Upcoming Calls</h3>
+<<<<<<< HEAD
                             <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-lg font-medium">
+=======
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 {upcomingCalls.length} Scheduled
                             </span>
                         </div>
@@ -281,14 +304,22 @@ const Telemedicine = () => {
                                                 </div>
                                                 <div>
                                                     <h4 className="font-medium text-gray-900">{call.patientName}</h4>
+<<<<<<< HEAD
                                                     <p className="text-lg text-gray-500">{call.patientId}</p>
+=======
+                                                    <p className="text-sm text-gray-500">{call.patientId}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 </div>
                                             </div>
                                             <button className="text-gray-400 hover:text-gray-600">
                                                 <MoreVertical className="w-5 h-5" />
                                             </button>
                                         </div>
+<<<<<<< HEAD
                                         <div className="flex items-center justify-between text-lg text-gray-600">
+=======
+                                        <div className="flex items-center justify-between text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <div className="flex items-center">
                                                 <Calendar className="w-3 h-3 mr-1" />
                                                 {call.date}
@@ -323,6 +354,7 @@ const Telemedicine = () => {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="text-center p-4 bg-blue-50 rounded-lg">
                                 <p className="text-2xl font-bold text-blue-900">12</p>
+<<<<<<< HEAD
                                 <p className="text-lg text-blue-600">Calls Today</p>
                             </div>
                             <div className="text-center p-4 bg-green-50 rounded-lg">
@@ -336,6 +368,21 @@ const Telemedicine = () => {
                             <div className="text-center p-4 bg-yellow-50 rounded-lg">
                                 <p className="text-2xl font-bold text-yellow-900">22m</p>
                                 <p className="text-lg text-yellow-600">Avg Duration</p>
+=======
+                                <p className="text-sm text-blue-600">Calls Today</p>
+                            </div>
+                            <div className="text-center p-4 bg-green-50 rounded-lg">
+                                <p className="text-2xl font-bold text-green-900">4.7</p>
+                                <p className="text-sm text-green-600">Avg Rating</p>
+                            </div>
+                            <div className="text-center p-4 bg-purple-50 rounded-lg">
+                                <p className="text-2xl font-bold text-purple-900">48</p>
+                                <p className="text-sm text-purple-600">This Week</p>
+                            </div>
+                            <div className="text-center p-4 bg-yellow-50 rounded-lg">
+                                <p className="text-2xl font-bold text-yellow-900">22m</p>
+                                <p className="text-sm text-yellow-600">Avg Duration</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                         </div>
                     </div>

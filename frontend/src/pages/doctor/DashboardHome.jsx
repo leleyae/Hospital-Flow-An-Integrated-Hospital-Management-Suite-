@@ -99,7 +99,11 @@ const DoctorAppointments = () => {
         const label = status.charAt(0).toUpperCase() + status.slice(1).replace('_', ' ');
 
         return (
+<<<<<<< HEAD
             <span className={`px-3 py-1 rounded-full text-lg font-medium ${badges[status] || 'bg-gray-100 text-gray-800'}`}>
+=======
+            <span className={`px-3 py-1 rounded-full text-xs font-medium ${badges[status] || 'bg-gray-100 text-gray-800'}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                 {label}
             </span>
         );
@@ -191,7 +195,11 @@ const DoctorAppointments = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     {/* Search */}
                     <div className="md:col-span-2">
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Search Patients
                         </label>
                         <div className="relative">
@@ -208,7 +216,11 @@ const DoctorAppointments = () => {
 
                     {/* Date Filter */}
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Date Filter
                         </label>
                         <input
@@ -221,7 +233,11 @@ const DoctorAppointments = () => {
 
                     {/* Status Filter */}
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Status Filter
                         </label>
                         <select
@@ -279,6 +295,7 @@ const DoctorAppointments = () => {
                         <table className="min-w-full divide-y divide-gray-200">
                             <thead className="bg-gray-50">
                                 <tr>
+<<<<<<< HEAD
                                     <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
                                         Patient
                                     </th>
@@ -292,6 +309,21 @@ const DoctorAppointments = () => {
                                         Status
                                     </th>
                                     <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+=======
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Patient
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Date & Time
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Reason
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Status
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Actions
                                     </th>
                                 </tr>
@@ -306,15 +338,22 @@ const DoctorAppointments = () => {
                                                 </div>
                                                 <div className="ml-4">
                                                     <div className="font-medium text-gray-900">
+<<<<<<< HEAD
                                                         {appointment.patientId.userId.firstName} {appointment.patientId.userId.lastName}
                                                     </div>
                                                     <div className="text-lg text-gray-500">
+=======
+                                                        {appointment.patientName || 'Patient'}
+                                                    </div>
+                                                    <div className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         ID: {appointment.patientId?.patientId || 'N/A'}
                                                     </div>
                                                 </div>
                                             </div>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                             <div className="text-lg text-gray-900">
                                                 {formatDate(appointment.appointmentDate)}
                                             </div>
@@ -326,6 +365,22 @@ const DoctorAppointments = () => {
                                             </div>
                                             {appointment.symptoms && appointment.symptoms.length > 0 && (
                                                 <div className="text-lg text-gray-500 mt-1">
+=======
+                                            <div className="text-sm text-gray-900">
+                                                {formatDate(appointment.appointmentDate)}
+                                            </div>
+                                            <div className="text-sm text-gray-500">
+                                                <FaClock className="inline mr-1" />
+                                                {formatTime(appointment.startTime)} - {formatTime(appointment.endTime)}
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900 max-w-xs truncate">
+                                                {appointment.reason || 'No reason provided'}
+                                            </div>
+                                            {appointment.symptoms && appointment.symptoms.length > 0 && (
+                                                <div className="text-xs text-gray-500 mt-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     Symptoms: {appointment.symptoms.join(', ')}
                                                 </div>
                                             )}
@@ -333,7 +388,11 @@ const DoctorAppointments = () => {
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             {getStatusBadge(appointment.appointmentStatus)}
                                         </td>
+<<<<<<< HEAD
                                         <td className="px-6 py-4 whitespace-nowrap text-lg font-medium">
+=======
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <div className="flex space-x-2">
                                                 {appointment.appointmentStatus === 'scheduled' && (
                                                     <button
@@ -344,7 +403,11 @@ const DoctorAppointments = () => {
                                                                     loadAppointments();
                                                                 });
                                                         }}
+<<<<<<< HEAD
                                                         className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 text-lg"
+=======
+                                                        className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     >
                                                         Start
                                                     </button>
@@ -353,7 +416,11 @@ const DoctorAppointments = () => {
                                                 {appointment.appointmentStatus === 'in_progress' && (
                                                     <Link
                                                         to={`/doctor/consultation/${appointment._id}`}
+<<<<<<< HEAD
                                                         className="flex items-center px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 text-lg"
+=======
+                                                        className="flex items-center px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     >
                                                         <FaStethoscope className="mr-1" />
                                                         Continue
@@ -364,7 +431,11 @@ const DoctorAppointments = () => {
 
                                                 <Link
                                                     to={`/doctor/appointments/${appointment._id}`}
+<<<<<<< HEAD
                                                     className="flex items-center px-3 py-1 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-lg"
+=======
+                                                    className="flex items-center px-3 py-1 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 >
                                                     Details
                                                     <FaArrowRight className="ml-1" />
@@ -385,6 +456,7 @@ const DoctorAppointments = () => {
                 <div className="flex flex-wrap gap-3">
                     <div className="flex items-center">
                         <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+<<<<<<< HEAD
                         <span className="text-lg text-gray-600">Scheduled</span>
                     </div>
                     <div className="flex items-center">
@@ -398,6 +470,21 @@ const DoctorAppointments = () => {
                     <div className="flex items-center">
                         <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
                         <span className="text-lg text-gray-600">Cancelled</span>
+=======
+                        <span className="text-sm text-gray-600">Scheduled</span>
+                    </div>
+                    <div className="flex items-center">
+                        <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+                        <span className="text-sm text-gray-600">In Progress</span>
+                    </div>
+                    <div className="flex items-center">
+                        <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                        <span className="text-sm text-gray-600">Completed</span>
+                    </div>
+                    <div className="flex items-center">
+                        <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                        <span className="text-sm text-gray-600">Cancelled</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     </div>
                 </div>
             </div>

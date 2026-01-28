@@ -77,7 +77,11 @@ const AppointmentDetails = () => {
         const config = statusConfig[status] || statusConfig.scheduled;
 
         return (
+<<<<<<< HEAD
             <span className={`inline-flex items-center px-3 py-1 rounded-full text-lg font-medium ${config.color}`}>
+=======
+            <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${config.color}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                 {config.text}
             </span>
         );
@@ -295,7 +299,11 @@ const AppointmentDetails = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="space-y-3">
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-500">Date</label>
+=======
+                                        <label className="block text-sm font-medium text-gray-500">Date</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <div className="mt-1 flex items-center text-gray-900">
                                             <FiCalendar className="mr-2 text-gray-400" />
                                             {formatDate(appointment.appointmentDate)}
@@ -303,7 +311,11 @@ const AppointmentDetails = () => {
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-500">Time</label>
+=======
+                                        <label className="block text-sm font-medium text-gray-500">Time</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <div className="mt-1 flex items-center text-gray-900">
                                             <FiClock className="mr-2 text-gray-400" />
                                             {formatTime(appointment.appointmentTime)}
@@ -311,7 +323,11 @@ const AppointmentDetails = () => {
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-500">Type</label>
+=======
+                                        <label className="block text-sm font-medium text-gray-500">Type</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <div className="mt-1 text-gray-900 capitalize">
                                             {appointment.type}
                                         </div>
@@ -320,21 +336,33 @@ const AppointmentDetails = () => {
 
                                 <div className="space-y-3">
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-500">Duration</label>
+=======
+                                        <label className="block text-sm font-medium text-gray-500">Duration</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <div className="mt-1 text-gray-900">
                                             30 minutes (standard)
                                         </div>
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-500">Created On</label>
+=======
+                                        <label className="block text-sm font-medium text-gray-500">Created On</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <div className="mt-1 text-gray-900">
                                             {new Date(appointment.createdAt).toLocaleString()}
                                         </div>
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-500">Updated On</label>
+=======
+                                        <label className="block text-sm font-medium text-gray-500">Updated On</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <div className="mt-1 text-gray-900">
                                             {new Date(appointment.updatedAt).toLocaleString()}
                                         </div>
@@ -344,7 +372,11 @@ const AppointmentDetails = () => {
 
                             {/* Reason */}
                             <div className="mt-6">
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-500 mb-2">Reason for Visit</label>
+=======
+                                <label className="block text-sm font-medium text-gray-500 mb-2">Reason for Visit</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 <div className="bg-gray-50 rounded-lg p-4">
                                     <p className="text-gray-900">{appointment.reason}</p>
                                 </div>
@@ -353,7 +385,11 @@ const AppointmentDetails = () => {
                             {/* Notes */}
                             {appointment.notes && (
                                 <div className="mt-6">
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-500 mb-2">Additional Notes</label>
+=======
+                                    <label className="block text-sm font-medium text-gray-500 mb-2">Additional Notes</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <div className="bg-blue-50 rounded-lg p-4">
                                         <p className="text-gray-900">{appointment.notes}</p>
                                     </div>
@@ -414,7 +450,11 @@ const AppointmentDetails = () => {
                             <div className="mt-4">
                                 <button
                                     onClick={() => navigate(`/receptionist/patients/${appointment.patientId?._id}`)}
+<<<<<<< HEAD
                                     className="text-blue-600 hover:text-blue-800 text-lg"
+=======
+                                    className="text-blue-600 hover:text-blue-800 text-sm"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 >
                                     View Full Patient Profile →
                                 </button>
@@ -534,20 +574,32 @@ const AppointmentDetails = () => {
                                 <FaCalendarAlt className="h-6 w-6 text-red-600" />
                             </div>
                             <h3 className="text-lg font-medium text-gray-900 mb-2">Delete Appointment</h3>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500 mb-4">
+=======
+                            <p className="text-sm text-gray-500 mb-4">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 Are you sure you want to delete this appointment? This action cannot be undone.
                             </p>
                         </div>
                         <div className="flex justify-end space-x-3">
                             <button
                                 onClick={() => setShowDeleteModal(false)}
+<<<<<<< HEAD
                                 className="px-4 py-2 border border-gray-300 rounded-md text-lg font-medium text-gray-700 hover:bg-gray-50"
+=======
+                                className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 Cancel
                             </button>
                             <button
                                 onClick={handleDelete}
+<<<<<<< HEAD
                                 className="px-4 py-2 bg-red-600 text-white rounded-md text-lg font-medium hover:bg-red-700"
+=======
+                                className="px-4 py-2 bg-red-600 text-white rounded-md text-sm font-medium hover:bg-red-700"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 Delete Appointment
                             </button>

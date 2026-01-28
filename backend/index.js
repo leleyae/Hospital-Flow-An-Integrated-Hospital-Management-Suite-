@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
 
-// Load environment variables
+// Load environment variabless
 dotenv.config();
 
 

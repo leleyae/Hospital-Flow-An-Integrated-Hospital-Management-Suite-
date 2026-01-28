@@ -58,7 +58,11 @@ const PharmacistLayout = ({ children }) => {
                                 <Link
                                     key={item.name}
                                     to={item.href}
+<<<<<<< HEAD
                                     className={`flex items-center px-3 py-2 text-lg font-medium rounded-lg ${isActive
+=======
+                                    className={`flex items-center px-3 py-2 text-sm font-medium rounded-lg ${isActive
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         ? 'bg-blue-50 text-blue-700'
                                         : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900'
                                         }`}
@@ -86,7 +90,11 @@ const PharmacistLayout = ({ children }) => {
                                 <Link
                                     key={item.name}
                                     to={item.href}
+<<<<<<< HEAD
                                     className={`flex items-center px-3 py-2 text-lg font-medium rounded-lg ${isActive
+=======
+                                    className={`flex items-center px-3 py-2 text-sm font-medium rounded-lg ${isActive
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         ? 'bg-blue-50 text-blue-700'
                                         : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900'
                                         }`}
@@ -100,7 +108,11 @@ const PharmacistLayout = ({ children }) => {
                     <div className="p-4 border-t">
                         <button
                             onClick={handleLogout}
+<<<<<<< HEAD
                             className="flex items-center w-full px-3 py-2 text-lg font-medium text-red-600 rounded-lg hover:bg-red-50"
+=======
+                            className="flex items-center w-full px-3 py-2 text-sm font-medium text-red-600 rounded-lg hover:bg-red-50"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         >
                             <FaSignOutAlt className="mr-3" />
                             Logout
@@ -133,7 +145,11 @@ const PharmacistLayout = ({ children }) => {
                                 <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
                                     <FaUser className="text-blue-600" />
                                 </div>
+<<<<<<< HEAD
                                 <span className="ml-2 text-lg font-medium text-gray-700">
+=======
+                                <span className="ml-2 text-sm font-medium text-gray-700">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Pharmacist
                                 </span>
                             </div>

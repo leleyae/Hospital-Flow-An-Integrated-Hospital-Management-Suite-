@@ -5,7 +5,11 @@ import PharmacyInventory from './PharmacyInventory';
 import PrescriptionDispensing from './PrescriptionDispensing';
 import OTCSales from './OTCSales';
 import AddMedicine from './AddMedicine';
+<<<<<<< HEAD
 import EditMedicine from './EditMedicine'
+=======
+import EditMedicine from './EditMedicine';
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
 
 import ProtectedRoute from '../../components/ProtectedRoute';
 

@@ -267,7 +267,11 @@ const Schedule = () => {
                 <h2 className="text-xl font-bold text-gray-900 mb-6">Check Availability</h2>
                 <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                     <div className="flex-1">
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Date
                         </label>
                         <input
@@ -276,7 +280,11 @@ const Schedule = () => {
                         />
                     </div>
                     <div className="flex-1">
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Time
                         </label>
                         <input

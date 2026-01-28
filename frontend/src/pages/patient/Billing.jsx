@@ -77,7 +77,11 @@ const Billing = () => {
                             <CreditCard className="w-6 h-6 text-blue-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Total Balance</p>
+=======
+                            <p className="text-sm text-gray-500">Total Balance</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">$430.00</p>
                         </div>
                     </div>
@@ -89,7 +93,11 @@ const Billing = () => {
                             <CheckCircle className="w-6 h-6 text-green-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Paid This Month</p>
+=======
+                            <p className="text-sm text-gray-500">Paid This Month</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">$320.00</p>
                         </div>
                     </div>
@@ -101,7 +109,11 @@ const Billing = () => {
                             <Clock className="w-6 h-6 text-yellow-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Pending</p>
+=======
+                            <p className="text-sm text-gray-500">Pending</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">$250.00</p>
                         </div>
                     </div>
@@ -113,7 +125,11 @@ const Billing = () => {
                             <AlertTriangle className="w-6 h-6 text-red-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Overdue</p>
+=======
+                            <p className="text-sm text-gray-500">Overdue</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">$180.00</p>
                         </div>
                     </div>
@@ -126,7 +142,11 @@ const Billing = () => {
                     {['pending', 'paid', 'all'].map((tab) => (
                         <button
                             key={tab}
+<<<<<<< HEAD
                             className={`py-2 px-1 border-b-2 font-medium text-lg ${activeTab === tab
+=======
+                            className={`py-2 px-1 border-b-2 font-medium text-sm ${activeTab === tab
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 ? 'border-blue-500 text-blue-600'
                                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                 }`}
@@ -188,6 +208,7 @@ const Billing = () => {
 
                                         <div className="mt-2 grid grid-cols-2 md:grid-cols-4 gap-4">
                                             <div>
+<<<<<<< HEAD
                                                 <p className="text-lg text-gray-500">Date</p>
                                                 <p className="font-medium">{invoice.date}</p>
                                             </div>
@@ -201,15 +222,37 @@ const Billing = () => {
                                             </div>
                                             <div>
                                                 <p className="text-lg text-gray-500">Items</p>
+=======
+                                                <p className="text-sm text-gray-500">Date</p>
+                                                <p className="font-medium">{invoice.date}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-500">Amount</p>
+                                                <p className="font-bold text-lg">${invoice.amount.toFixed(2)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-500">Due Date</p>
+                                                <p className="font-medium">{invoice.dueDate}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-500">Items</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <p className="font-medium">{invoice.items.length} items</p>
                                             </div>
                                         </div>
 
                                         <div className="mt-4">
+<<<<<<< HEAD
                                             <p className="text-lg text-gray-500 mb-1">Items:</p>
                                             <div className="space-y-1">
                                                 {invoice.items.map((item, idx) => (
                                                     <div key={idx} className="flex justify-between text-lg">
+=======
+                                            <p className="text-sm text-gray-500 mb-1">Items:</p>
+                                            <div className="space-y-1">
+                                                {invoice.items.map((item, idx) => (
+                                                    <div key={idx} className="flex justify-between text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         <span>{item.description}</span>
                                                         <span>${item.amount.toFixed(2)}</span>
                                                     </div>
@@ -271,7 +314,11 @@ const Billing = () => {
                                     </span>
                                 </td>
                                 <td>
+<<<<<<< HEAD
                                     <button className="text-blue-600 hover:text-blue-700 text-lg">
+=======
+                                    <button className="text-blue-600 hover:text-blue-700 text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Download
                                     </button>
                                 </td>
@@ -287,7 +334,11 @@ const Billing = () => {
                                     </span>
                                 </td>
                                 <td>
+<<<<<<< HEAD
                                     <button className="text-blue-600 hover:text-blue-700 text-lg">
+=======
+                                    <button className="text-blue-600 hover:text-blue-700 text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Download
                                     </button>
                                 </td>
@@ -309,7 +360,11 @@ const Billing = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Payment Method
                                 </label>
                                 <select className="input-field">
@@ -321,7 +376,11 @@ const Billing = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Card Number
                                 </label>
                                 <input type="text" className="input-field" placeholder="1234 5678 9012 3456" />
@@ -329,13 +388,21 @@ const Billing = () => {
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Expiry Date
                                     </label>
                                     <input type="text" className="input-field" placeholder="MM/YY" />
                                 </div>
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         CVV
                                     </label>
                                     <input type="text" className="input-field" placeholder="123" />

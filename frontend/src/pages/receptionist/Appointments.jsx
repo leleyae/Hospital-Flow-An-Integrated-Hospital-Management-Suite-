@@ -84,7 +84,11 @@ const AppointmentList = () => {
         const config = statusConfig[status] || statusConfig.scheduled;
 
         return (
+<<<<<<< HEAD
             <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-lg font-medium ${config.color}`}>
+=======
+            <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${config.color}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                 {config.text}
             </span>
         );
@@ -150,7 +154,11 @@ const AppointmentList = () => {
                                 <FaCalendarAlt className="text-blue-600 text-xl" />
                             </div>
                             <div className="ml-4">
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500">Total Appointments</p>
+=======
+                                <p className="text-sm text-gray-500">Total Appointments</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 <p className="text-2xl font-bold text-gray-900">{appointments.length}</p>
                             </div>
                         </div>
@@ -162,7 +170,11 @@ const AppointmentList = () => {
                                 <FiCalendar className="text-green-600 text-xl" />
                             </div>
                             <div className="ml-4">
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500">Today's Appointments</p>
+=======
+                                <p className="text-sm text-gray-500">Today's Appointments</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 <p className="text-2xl font-bold text-gray-900">
                                     {appointments.filter(a => {
                                         const today = new Date();
@@ -180,7 +192,11 @@ const AppointmentList = () => {
                                 <FaClock className="text-yellow-600 text-xl" />
                             </div>
                             <div className="ml-4">
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500">Upcoming</p>
+=======
+                                <p className="text-sm text-gray-500">Upcoming</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 <p className="text-2xl font-bold text-gray-900">
                                     {appointments.filter(a => {
                                         const today = new Date();
@@ -198,7 +214,11 @@ const AppointmentList = () => {
                                 <FaUserMd className="text-gray-600 text-xl" />
                             </div>
                             <div className="ml-4">
+<<<<<<< HEAD
                                 <p className="text-lg text-gray-500">Doctors on Duty</p>
+=======
+                                <p className="text-sm text-gray-500">Doctors on Duty</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 <p className="text-2xl font-bold text-gray-900">
                                     {[...new Set(appointments.map(a => a.doctorId?._id))].length}
                                 </p>
@@ -281,6 +301,7 @@ const AppointmentList = () => {
                             <table className="min-w-full divide-y divide-gray-200">
                                 <thead className="bg-gray-50">
                                     <tr>
+<<<<<<< HEAD
                                         <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
                                             Appointment ID
                                         </th>
@@ -300,6 +321,27 @@ const AppointmentList = () => {
                                             Status
                                         </th>
                                         <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+=======
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Appointment ID
+                                        </th>
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Patient
+                                        </th>
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Doctor
+                                        </th>
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Date & Time
+                                        </th>
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Reason
+                                        </th>
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Status
+                                        </th>
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Actions
                                         </th>
                                     </tr>
@@ -308,7 +350,11 @@ const AppointmentList = () => {
                                     {filteredAppointments.map((appointment) => (
                                         <tr key={appointment._id} className="hover:bg-gray-50">
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <div className="text-lg font-mono text-blue-600">
+=======
+                                                <div className="text-sm font-mono text-blue-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     {appointment.appointmentId}
                                                 </div>
                                             </td>
@@ -318,25 +364,43 @@ const AppointmentList = () => {
                                                         <FaUser className="text-blue-600" />
                                                     </div>
                                                     <div className="ml-4">
+<<<<<<< HEAD
                                                         <div className="text-lg font-medium text-gray-900">
                                                             {appointment.patientId?.userId?.firstName} {appointment.patientId?.userId?.lastName}
                                                         </div>
                                                         <div className="text-lg text-gray-500">
+=======
+                                                        <div className="text-sm font-medium text-gray-900">
+                                                            {appointment.patientId?.userId?.firstName} {appointment.patientId?.userId?.lastName}
+                                                        </div>
+                                                        <div className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                             {appointment.patientId?.patientId}
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <div className="text-lg text-gray-900">
                                                     Dr. {appointment.doctorId?.firstName} {appointment.doctorId?.lastName}
                                                 </div>
                                                 <div className="text-lg text-gray-500">
+=======
+                                                <div className="text-sm text-gray-900">
+                                                    Dr. {appointment.doctorId?.firstName} {appointment.doctorId?.lastName}
+                                                </div>
+                                                <div className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     {appointment.doctorId?.specialization || 'General'}
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <div className="text-lg text-gray-900">
+=======
+                                                <div className="text-sm text-gray-900">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     <div className="flex items-center">
                                                         <FiCalendar className="mr-2 text-gray-400" />
                                                         {formatDate(appointment.appointmentDate)}
@@ -348,17 +412,28 @@ const AppointmentList = () => {
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4">
+<<<<<<< HEAD
                                                 <div className="text-lg text-gray-900 max-w-xs truncate">
                                                     {appointment.reason}
                                                 </div>
                                                 <div className="text-lg text-gray-500 mt-1">
+=======
+                                                <div className="text-sm text-gray-900 max-w-xs truncate">
+                                                    {appointment.reason}
+                                                </div>
+                                                <div className="text-xs text-gray-500 mt-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     {appointment.type}
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 {getStatusBadge(appointment.status)}
                                             </td>
+<<<<<<< HEAD
                                             <td className="px-6 py-4 whitespace-nowrap text-lg font-medium">
+=======
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <div className="flex space-x-2">
                                                     <button
                                                         onClick={() => navigate(`/receptionist/appointments/${appointment._id}`)}
@@ -385,7 +460,11 @@ const AppointmentList = () => {
                 </div>
 
                 {/* Quick Stats Footer */}
+<<<<<<< HEAD
                 <div className="mt-6 text-center text-gray-500 text-lg">
+=======
+                <div className="mt-6 text-center text-gray-500 text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     Showing {filteredAppointments.length} of {appointments.length} appointments
                 </div>
             </div>

@@ -66,6 +66,7 @@ const MedicalRecords = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-blue-600">Total Records</p>
                     <p className="text-2xl font-bold">12</p>
                 </div>
@@ -79,6 +80,21 @@ const MedicalRecords = () => {
                 </div>
                 <div className="bg-yellow-50 p-4 rounded-lg">
                     <p className="text-lg text-yellow-600">Imaging</p>
+=======
+                    <p className="text-sm text-blue-600">Total Records</p>
+                    <p className="text-2xl font-bold">12</p>
+                </div>
+                <div className="bg-green-50 p-4 rounded-lg">
+                    <p className="text-sm text-green-600">This Year</p>
+                    <p className="text-2xl font-bold">4</p>
+                </div>
+                <div className="bg-purple-50 p-4 rounded-lg">
+                    <p className="text-sm text-purple-600">Lab Results</p>
+                    <p className="text-2xl font-bold">8</p>
+                </div>
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                    <p className="text-sm text-yellow-600">Imaging</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold">3</p>
                 </div>
             </div>
@@ -135,7 +151,11 @@ const MedicalRecords = () => {
                                 </div>
                                 <div className="ml-4">
                                     <h3 className="font-bold">{record.title}</h3>
+<<<<<<< HEAD
                                     <div className="flex items-center space-x-4 text-lg text-gray-600 mt-1">
+=======
+                                    <div className="flex items-center space-x-4 text-sm text-gray-600 mt-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <span className="flex items-center">
                                             <Calendar className="w-4 h-4 mr-1" />
                                             {record.date}
@@ -162,7 +182,11 @@ const MedicalRecords = () => {
                         </div>
 
                         <div className="mt-4 pt-4 border-t border-gray-200">
+<<<<<<< HEAD
                             <div className="flex justify-between text-lg text-gray-600">
+=======
+                            <div className="flex justify-between text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 <span>File size: {record.fileSize}</span>
                                 <span>Category: {record.category}</span>
                             </div>

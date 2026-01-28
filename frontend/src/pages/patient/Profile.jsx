@@ -76,7 +76,11 @@ const Profile = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     First Name
                                 </label>
                                 {isEditing ? (
@@ -95,7 +99,11 @@ const Profile = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Last Name
                                 </label>
                                 {isEditing ? (
@@ -114,7 +122,11 @@ const Profile = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Email
                                 </label>
                                 {isEditing ? (
@@ -133,7 +145,11 @@ const Profile = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Phone
                                 </label>
                                 {isEditing ? (
@@ -152,7 +168,11 @@ const Profile = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Date of Birth
                                 </label>
                                 {isEditing ? (
@@ -171,7 +191,11 @@ const Profile = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Address
                                 </label>
                                 {isEditing ? (
@@ -196,7 +220,11 @@ const Profile = () => {
                         <h2 className="text-xl font-bold mb-6">Emergency Contact</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Name
                                 </label>
                                 {isEditing ? (
@@ -217,7 +245,11 @@ const Profile = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Relationship
                                 </label>
                                 {isEditing ? (
@@ -238,7 +270,11 @@ const Profile = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Phone
                                 </label>
                                 {isEditing ? (
@@ -268,7 +304,11 @@ const Profile = () => {
 
                         <div className="space-y-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Blood Group
                                 </label>
                                 <div className="flex items-center p-3 bg-red-50 border border-red-200 rounded-lg">
@@ -279,7 +319,11 @@ const Profile = () => {
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Height
                                     </label>
                                     <div className="flex items-center p-3 bg-blue-50 border border-blue-200 rounded-lg">
@@ -289,7 +333,11 @@ const Profile = () => {
                                 </div>
 
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Weight
                                     </label>
                                     <div className="flex items-center p-3 bg-blue-50 border border-blue-200 rounded-lg">
@@ -300,13 +348,21 @@ const Profile = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     BMI
                                 </label>
                                 <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
                                     <div className="flex items-center justify-between">
                                         <span className="font-bold">23.5</span>
+<<<<<<< HEAD
                                         <span className="text-lg text-green-700">Normal</span>
+=======
+                                        <span className="text-sm text-green-700">Normal</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
                                     <div className="w-full bg-gray-200 rounded-full h-2 mt-2">
                                         <div className="bg-green-500 h-2 rounded-full" style={{ width: '60%' }}></div>
@@ -355,7 +411,11 @@ const Profile = () => {
                 <h2 className="text-xl font-bold mb-6">Insurance Information</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Insurance Provider
                         </label>
                         <div className="p-3 border border-gray-200 rounded-lg">
@@ -363,7 +423,11 @@ const Profile = () => {
                         </div>
                     </div>
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Policy Number
                         </label>
                         <div className="p-3 border border-gray-200 rounded-lg">
@@ -371,7 +435,11 @@ const Profile = () => {
                         </div>
                     </div>
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Coverage Type
                         </label>
                         <div className="p-3 border border-gray-200 rounded-lg">

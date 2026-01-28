@@ -156,10 +156,17 @@ const MedicalRecords = () => {
                                     <h3 className="font-bold text-gray-900">Initial Consultation</h3>
                                     <div className="flex items-center mt-1">
                                         <User className="w-3 h-3 text-gray-400 mr-1" />
+<<<<<<< HEAD
                                         <span className="text-lg text-gray-600">John Doe</span>
                                         <span className="mx-2 text-gray-300">•</span>
                                         <Calendar className="w-3 h-3 text-gray-400 mr-1" />
                                         <span className="text-lg text-gray-600">Dec 15, 2023</span>
+=======
+                                        <span className="text-sm text-gray-600">John Doe</span>
+                                        <span className="mx-2 text-gray-300">•</span>
+                                        <Calendar className="w-3 h-3 text-gray-400 mr-1" />
+                                        <span className="text-sm text-gray-600">Dec 15, 2023</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
                                 </div>
                             </div>
@@ -178,10 +185,17 @@ const MedicalRecords = () => {
                         <div className="mb-4">
                             <h4 className="font-medium text-gray-900 mb-2">Diagnosis</h4>
                             <div className="flex flex-wrap gap-2">
+<<<<<<< HEAD
                                 <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-lg">
                                     Migraine
                                 </span>
                                 <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-lg">
+=======
+                                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+                                    Migraine
+                                </span>
+                                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Vitamin D Deficiency
                                 </span>
                             </div>
@@ -191,11 +205,19 @@ const MedicalRecords = () => {
                             <h4 className="font-medium text-gray-900 mb-2">Prescribed Medications</h4>
                             <div className="space-y-2">
                                 <div className="flex justify-between items-center p-2 bg-gray-50 rounded">
+<<<<<<< HEAD
                                     <span className="text-lg text-gray-900">Sumatriptan</span>
                                     <span className="text-xs text-gray-500">50mg, as needed</span>
                                 </div>
                                 <div className="flex justify-between items-center p-2 bg-gray-50 rounded">
                                     <span className="text-lg text-gray-900">Vitamin D3</span>
+=======
+                                    <span className="text-sm text-gray-900">Sumatriptan</span>
+                                    <span className="text-xs text-gray-500">50mg, as needed</span>
+                                </div>
+                                <div className="flex justify-between items-center p-2 bg-gray-50 rounded">
+                                    <span className="text-sm text-gray-900">Vitamin D3</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <span className="text-xs text-gray-500">2000 IU, daily</span>
                                 </div>
                             </div>
@@ -230,10 +252,17 @@ const MedicalRecords = () => {
                                     <h3 className="font-bold text-gray-900">Procedure Report</h3>
                                     <div className="flex items-center mt-1">
                                         <User className="w-3 h-3 text-gray-400 mr-1" />
+<<<<<<< HEAD
                                         <span className="text-lg text-gray-600">Jane Smith</span>
                                         <span className="mx-2 text-gray-300">•</span>
                                         <Calendar className="w-3 h-3 text-gray-400 mr-1" />
                                         <span className="text-lg text-gray-600">Nov 30, 2023</span>
+=======
+                                        <span className="text-sm text-gray-600">Jane Smith</span>
+                                        <span className="mx-2 text-gray-300">•</span>
+                                        <Calendar className="w-3 h-3 text-gray-400 mr-1" />
+                                        <span className="text-sm text-gray-600">Nov 30, 2023</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
                                 </div>
                             </div>
@@ -260,7 +289,11 @@ const MedicalRecords = () => {
 
                         <div className="mb-4">
                             <h4 className="font-medium text-gray-900 mb-2">Post-op Instructions</h4>
+<<<<<<< HEAD
                             <p className="text-gray-600 text-lg">
+=======
+                            <p className="text-gray-600 text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 Weight-bearing as tolerated with crutches for 2 weeks.
                                 Physical therapy to begin 48 hours post-op.
                             </p>
@@ -313,22 +346,38 @@ const MedicalRecords = () => {
             {/* Quick Stats */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-blue-600 font-medium">Total Records</p>
+=======
+                    <p className="text-sm text-blue-600 font-medium">Total Records</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-blue-900">0</p>
                 </div>
 
                 <div className="bg-green-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-green-600 font-medium">Consultations</p>
+=======
+                    <p className="text-sm text-green-600 font-medium">Consultations</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-green-900">0</p>
                 </div>
 
                 <div className="bg-purple-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-purple-600 font-medium">Procedures</p>
+=======
+                    <p className="text-sm text-purple-600 font-medium">Procedures</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-purple-900">0</p>
                 </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-yellow-600 font-medium">This Month</p>
+=======
+                    <p className="text-sm text-yellow-600 font-medium">This Month</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-yellow-900">0</p>
                 </div>
             </div>

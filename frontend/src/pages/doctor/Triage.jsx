@@ -165,7 +165,11 @@ const Triage = () => {
                 <AlertTriangle className="w-6 h-6 text-red-500 mr-3" />
                 <div className="flex-1">
                     <p className="font-medium text-red-800">Emergency Mode Active</p>
+<<<<<<< HEAD
                     <p className="text-lg text-red-600">
+=======
+                    <p className="text-sm text-red-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         Currently {triageCases.filter(t => t.priority === 'RED').length} critical patients in queue
                     </p>
                 </div>
@@ -225,6 +229,7 @@ const Triage = () => {
                             key={priority.id}
                             onClick={() => setSelectedPriority(priority.id)}
                             className={`flex-1 px-6 py-4 rounded-lg transition-colors duration-200 flex items-center justify-center ${selectedPriority === priority.id
+<<<<<<< HEAD
                                 ? priority.id === 'RED' ? 'bg-red-600 text-white' :
                                     priority.id === 'YELLOW' ? 'bg-yellow-600 text-white' :
                                         priority.id === 'GREEN' ? 'bg-green-600 text-white' :
@@ -236,6 +241,19 @@ const Triage = () => {
                                 priority.id === 'YELLOW' ? 'bg-yellow-500' :
                                     priority.id === 'GREEN' ? 'bg-green-500' :
                                         'bg-gray-500'
+=======
+                                    ? priority.id === 'RED' ? 'bg-red-600 text-white' :
+                                        priority.id === 'YELLOW' ? 'bg-yellow-600 text-white' :
+                                            priority.id === 'GREEN' ? 'bg-green-600 text-white' :
+                                                'bg-blue-600 text-white'
+                                    : 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm'
+                                }`}
+                        >
+                            <div className={`w-3 h-3 rounded-full mr-3 ${priority.id === 'RED' ? 'bg-red-500' :
+                                    priority.id === 'YELLOW' ? 'bg-yellow-500' :
+                                        priority.id === 'GREEN' ? 'bg-green-500' :
+                                            'bg-gray-500'
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 }`} />
                             {priority.label}
                             <span className="ml-2 px-2 py-1 text-xs rounded-full bg-white/20">
@@ -260,8 +278,13 @@ const Triage = () => {
                                     <div>
                                         <h3 className="font-bold text-gray-900">{tCase.patientName}</h3>
                                         <div className="flex items-center mt-1 space-x-4">
+<<<<<<< HEAD
                                             <span className="text-lg text-gray-500">ID: {tCase.patientId}</span>
                                             <span className="text-lg text-gray-500">{tCase.age}y, {tCase.gender}</span>
+=======
+                                            <span className="text-sm text-gray-500">ID: {tCase.patientId}</span>
+                                            <span className="text-sm text-gray-500">{tCase.age}y, {tCase.gender}</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </div>
                                     </div>
                                 </div>
@@ -278,7 +301,11 @@ const Triage = () => {
                             {/* Arrival Time */}
                             <div className="flex items-center text-gray-600 mb-4">
                                 <Clock className="w-4 h-4 mr-2" />
+<<<<<<< HEAD
                                 <span className="text-lg">Arrived at {tCase.arrivalTime}</span>
+=======
+                                <span className="text-sm">Arrived at {tCase.arrivalTime}</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
 
                             {/* Chief Complaint */}
@@ -286,16 +313,27 @@ const Triage = () => {
                                 <h4 className="font-medium text-gray-900 mb-2">Chief Complaint</h4>
                                 <p className="text-gray-700">{tCase.chiefComplaint}</p>
                                 <div className="flex items-center mt-2">
+<<<<<<< HEAD
                                     <span className="text-lg font-medium text-gray-700 mr-4">Pain Level:</span>
+=======
+                                    <span className="text-sm font-medium text-gray-700 mr-4">Pain Level:</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <div className="flex items-center">
                                         {[...Array(10)].map((_, i) => (
                                             <div
                                                 key={i}
                                                 className={`w-3 h-6 mx-0.5 rounded-sm ${i < tCase.painLevel
+<<<<<<< HEAD
                                                     ? tCase.painLevel >= 7 ? 'bg-red-500' :
                                                         tCase.painLevel >= 4 ? 'bg-yellow-500' :
                                                             'bg-green-500'
                                                     : 'bg-gray-200'
+=======
+                                                        ? tCase.painLevel >= 7 ? 'bg-red-500' :
+                                                            tCase.painLevel >= 4 ? 'bg-yellow-500' :
+                                                                'bg-green-500'
+                                                        : 'bg-gray-200'
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     }`}
                                             />
                                         ))}
@@ -433,28 +471,44 @@ const Triage = () => {
             {/* Quick Stats */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="bg-red-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-red-600 font-medium">Red Priority</p>
+=======
+                    <p className="text-sm text-red-600 font-medium">Red Priority</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-red-900">
                         {triageCases.filter(t => t.priority === 'RED').length}
                     </p>
                 </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-yellow-600 font-medium">Yellow Priority</p>
+=======
+                    <p className="text-sm text-yellow-600 font-medium">Yellow Priority</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-yellow-900">
                         {triageCases.filter(t => t.priority === 'YELLOW').length}
                     </p>
                 </div>
 
                 <div className="bg-green-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-green-600 font-medium">Green Priority</p>
+=======
+                    <p className="text-sm text-green-600 font-medium">Green Priority</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-green-900">
                         {triageCases.filter(t => t.priority === 'GREEN').length}
                     </p>
                 </div>
 
                 <div className="bg-blue-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-blue-600 font-medium">Avg Wait Time</p>
+=======
+                    <p className="text-sm text-blue-600 font-medium">Avg Wait Time</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-blue-900">12m</p>
                 </div>
             </div>
@@ -465,17 +519,29 @@ const Triage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <button className="p-4 border border-red-200 rounded-lg hover:bg-red-50 transition-colors duration-200 text-left">
                         <h4 className="font-medium text-red-700 mb-2">Cardiac Arrest</h4>
+<<<<<<< HEAD
                         <p className="text-lg text-gray-600">Initiate CPR and call code blue</p>
+=======
+                        <p className="text-sm text-gray-600">Initiate CPR and call code blue</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     </button>
 
                     <button className="p-4 border border-red-200 rounded-lg hover:bg-red-50 transition-colors duration-200 text-left">
                         <h4 className="font-medium text-red-700 mb-2">Severe Trauma</h4>
+<<<<<<< HEAD
                         <p className="text-lg text-gray-600">Activate trauma team protocol</p>
+=======
+                        <p className="text-sm text-gray-600">Activate trauma team protocol</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     </button>
 
                     <button className="p-4 border border-red-200 rounded-lg hover:bg-red-50 transition-colors duration-200 text-left">
                         <h4 className="font-medium text-red-700 mb-2">Stroke Protocol</h4>
+<<<<<<< HEAD
                         <p className="text-lg text-gray-600">Time-sensitive intervention required</p>
+=======
+                        <p className="text-sm text-gray-600">Time-sensitive intervention required</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     </button>
                 </div>
             </div>

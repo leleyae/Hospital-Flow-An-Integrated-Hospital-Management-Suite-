@@ -85,7 +85,11 @@ const Telemedicine = () => {
                                         <div className="w-full h-full bg-gray-700 flex items-center justify-center">
                                             <div className="text-center">
                                                 <Users className="w-8 h-8 text-white mx-auto mb-2" />
+<<<<<<< HEAD
                                                 <p className="text-white text-lg">You</p>
+=======
+                                                <p className="text-white text-sm">You</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             </div>
                                         </div>
                                     </div>
@@ -108,7 +112,11 @@ const Telemedicine = () => {
                                             ) : (
                                                 <Mic className="w-6 h-6 text-white" />
                                             )}
+<<<<<<< HEAD
                                             <span className="text-white text-lg mt-2">
+=======
+                                            <span className="text-white text-sm mt-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 {isMuted ? 'Unmute' : 'Mute'}
                                             </span>
                                         </button>
@@ -123,14 +131,22 @@ const Telemedicine = () => {
                                             ) : (
                                                 <VideoOff className="w-6 h-6 text-white" />
                                             )}
+<<<<<<< HEAD
                                             <span className="text-white text-lg mt-2">
+=======
+                                            <span className="text-white text-sm mt-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 {isVideoOn ? 'Video Off' : 'Video On'}
                                             </span>
                                         </button>
 
                                         <button className="p-4 rounded-lg bg-gray-700 hover:bg-gray-600 flex flex-col items-center justify-center">
                                             <MessageSquare className="w-6 h-6 text-white" />
+<<<<<<< HEAD
                                             <span className="text-white text-lg mt-2">Chat</span>
+=======
+                                            <span className="text-white text-sm mt-2">Chat</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </button>
                                     </div>
 
@@ -167,7 +183,11 @@ const Telemedicine = () => {
                             <div className="space-y-4 max-h-60 overflow-y-auto">
                                 <div className="flex items-start">
                                     <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+<<<<<<< HEAD
                                         <span className="text-white text-lg">D</span>
+=======
+                                        <span className="text-white text-sm">D</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
                                     <div className="flex-1">
                                         <p className="text-white font-medium">Dr. Johnson</p>
@@ -185,7 +205,11 @@ const Telemedicine = () => {
                                         <p className="text-gray-500 text-xs mt-1">10:32 AM</p>
                                     </div>
                                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center ml-3">
+<<<<<<< HEAD
                                         <span className="text-white text-lg">Y</span>
+=======
+                                        <span className="text-white text-sm">Y</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +238,11 @@ const Telemedicine = () => {
                                     <Video className="w-6 h-6 text-blue-600" />
                                 </div>
                                 <div className="ml-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Total Calls</p>
+=======
+                                    <p className="text-sm text-gray-500">Total Calls</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold">8</p>
                                 </div>
                             </div>
@@ -226,7 +254,11 @@ const Telemedicine = () => {
                                     <Clock className="w-6 h-6 text-green-600" />
                                 </div>
                                 <div className="ml-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Avg Duration</p>
+=======
+                                    <p className="text-sm text-gray-500">Avg Duration</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold">25m</p>
                                 </div>
                             </div>
@@ -238,7 +270,11 @@ const Telemedicine = () => {
                                     <Calendar className="w-6 h-6 text-purple-600" />
                                 </div>
                                 <div className="ml-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Upcoming</p>
+=======
+                                    <p className="text-sm text-gray-500">Upcoming</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold">2</p>
                                 </div>
                             </div>
@@ -250,7 +286,11 @@ const Telemedicine = () => {
                                     <Users className="w-6 h-6 text-yellow-600" />
                                 </div>
                                 <div className="ml-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Doctors</p>
+=======
+                                    <p className="text-sm text-gray-500">Doctors</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold">4</p>
                                 </div>
                             </div>
@@ -263,7 +303,11 @@ const Telemedicine = () => {
                             {['upcoming', 'past', 'doctors'].map((tab) => (
                                 <button
                                     key={tab}
+<<<<<<< HEAD
                                     className={`py-2 px-1 border-b-2 font-medium text-lg ${activeTab === tab
+=======
+                                    className={`py-2 px-1 border-b-2 font-medium text-sm ${activeTab === tab
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         ? 'border-blue-500 text-blue-600'
                                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                         }`}
@@ -288,7 +332,11 @@ const Telemedicine = () => {
                                             <div className="ml-4">
                                                 <h3 className="font-bold text-lg">{appointment.doctor}</h3>
                                                 <p className="text-gray-600">{appointment.specialization}</p>
+<<<<<<< HEAD
                                                 <div className="flex items-center space-x-4 mt-2 text-lg text-gray-500">
+=======
+                                                <div className="flex items-center space-x-4 mt-2 text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     <span className="flex items-center">
                                                         <Calendar className="w-4 h-4 mr-1" />
                                                         {appointment.date}
@@ -299,7 +347,11 @@ const Telemedicine = () => {
                                                     </span>
                                                 </div>
                                                 {appointment.meetingId && (
+<<<<<<< HEAD
                                                     <p className="text-lg text-blue-600 mt-2">
+=======
+                                                    <p className="text-sm text-blue-600 mt-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         Meeting ID: {appointment.meetingId}
                                                     </p>
                                                 )}
@@ -379,13 +431,21 @@ const Telemedicine = () => {
                                                             {'★'.repeat(5 - Math.floor(doctor.rating))}
                                                         </span>
                                                     </div>
+<<<<<<< HEAD
                                                     <span className="ml-2 text-lg text-gray-600">{doctor.rating}</span>
+=======
+                                                    <span className="ml-2 text-sm text-gray-600">{doctor.rating}</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 </div>
                                             </div>
 
                                             <div className="mt-4 grid grid-cols-2 gap-4">
                                                 <div>
+<<<<<<< HEAD
                                                     <p className="text-lg text-gray-500">Availability</p>
+=======
+                                                    <p className="text-sm text-gray-500">Availability</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${doctor.availability.includes('now')
                                                         ? 'bg-green-100 text-green-800'
                                                         : 'bg-yellow-100 text-yellow-800'
@@ -394,7 +454,11 @@ const Telemedicine = () => {
                                                     </span>
                                                 </div>
                                                 <div>
+<<<<<<< HEAD
                                                     <p className="text-lg text-gray-500">Next Available</p>
+=======
+                                                    <p className="text-sm text-gray-500">Next Available</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     <p className="font-medium">{doctor.nextSlot}</p>
                                                 </div>
                                             </div>
@@ -419,7 +483,11 @@ const Telemedicine = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium text-blue-800">Test Your Equipment</p>
+<<<<<<< HEAD
                                     <p className="text-blue-700 text-lg">Check camera, microphone, and internet connection before the call</p>
+=======
+                                    <p className="text-blue-700 text-sm">Check camera, microphone, and internet connection before the call</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 </div>
                             </div>
                             <div className="flex items-start">
@@ -428,7 +496,11 @@ const Telemedicine = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium text-blue-800">Prepare Questions</p>
+<<<<<<< HEAD
                                     <p className="text-blue-700 text-lg">Write down your questions and symptoms beforehand</p>
+=======
+                                    <p className="text-blue-700 text-sm">Write down your questions and symptoms beforehand</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 </div>
                             </div>
                             <div className="flex items-start">
@@ -437,7 +509,11 @@ const Telemedicine = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium text-blue-800">Private Space</p>
+<<<<<<< HEAD
                                     <p className="text-blue-700 text-lg">Find a quiet, private space for your consultation</p>
+=======
+                                    <p className="text-blue-700 text-sm">Find a quiet, private space for your consultation</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 </div>
                             </div>
                             <div className="flex items-start">
@@ -446,7 +522,11 @@ const Telemedicine = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium text-blue-800">Be On Time</p>
+<<<<<<< HEAD
                                     <p className="text-blue-700 text-lg">Join the call 5-10 minutes before your scheduled time</p>
+=======
+                                    <p className="text-blue-700 text-sm">Join the call 5-10 minutes before your scheduled time</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 </div>
                             </div>
                         </div>

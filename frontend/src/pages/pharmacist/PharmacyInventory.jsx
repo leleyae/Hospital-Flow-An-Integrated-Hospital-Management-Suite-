@@ -8,8 +8,12 @@ import {
     ArrowPathIcon,
     ExclamationTriangleIcon,
     ClockIcon,
+<<<<<<< HEAD
     BeakerIcon,
     CurrencyDollarIcon
+=======
+    BeakerIcon
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
 } from '@heroicons/react/24/outline';
 
 const PharmacyInventory = () => {
@@ -133,7 +137,11 @@ const PharmacyInventory = () => {
                                     <BeakerIcon className="h-6 w-6 text-blue-600" />
                                 </div>
                                 <div>
+<<<<<<< HEAD
                                     <p className="text-lg font-medium text-gray-600">Total Items</p>
+=======
+                                    <p className="text-sm font-medium text-gray-600">Total Items</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold text-gray-900">{stats.totalItems}</p>
                                 </div>
                             </div>
@@ -144,7 +152,11 @@ const PharmacyInventory = () => {
                                     <ExclamationTriangleIcon className="h-6 w-6 text-yellow-600" />
                                 </div>
                                 <div>
+<<<<<<< HEAD
                                     <p className="text-lg font-medium text-gray-600">Low Stock Items</p>
+=======
+                                    <p className="text-sm font-medium text-gray-600">Low Stock Items</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold text-gray-900">{stats.lowStock}</p>
                                 </div>
                             </div>
@@ -155,7 +167,11 @@ const PharmacyInventory = () => {
                                     <CurrencyDollarIcon className="h-6 w-6 text-green-600" />
                                 </div>
                                 <div>
+<<<<<<< HEAD
                                     <p className="text-lg font-medium text-gray-600">Total Inventory Value</p>
+=======
+                                    <p className="text-sm font-medium text-gray-600">Total Inventory Value</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="text-2xl font-bold text-gray-900">
                                         ${stats.totalValue?.toFixed(2) || '0.00'}
                                     </p>
@@ -209,7 +225,11 @@ const PharmacyInventory = () => {
 
                             <button
                                 onClick={fetchInventory}
+<<<<<<< HEAD
                                 className="inline-flex items-center px-4 py-2 border border-gray-300 text-lg font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+=======
+                                className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 <ArrowPathIcon className="h-4 w-4 mr-2" />
                                 Refresh
@@ -224,6 +244,7 @@ const PharmacyInventory = () => {
                         <table className="min-w-full divide-y divide-gray-200">
                             <thead className="bg-gray-50">
                                 <tr>
+<<<<<<< HEAD
                                     <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
                                         Medicine
                                     </th>
@@ -240,6 +261,24 @@ const PharmacyInventory = () => {
                                         Price
                                     </th>
                                     <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+=======
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Medicine
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Category
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Batch & Expiry
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Stock
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Price
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Actions
                                     </th>
                                 </tr>
@@ -253,6 +292,7 @@ const PharmacyInventory = () => {
                                         <tr key={medicine._id} className="hover:bg-gray-50">
                                             <td className="px-6 py-4">
                                                 <div>
+<<<<<<< HEAD
                                                     <div className="text-lg font-medium text-gray-900">
                                                         {medicine.medicineName}
                                                     </div>
@@ -260,16 +300,30 @@ const PharmacyInventory = () => {
                                                         {medicine.genericName}
                                                     </div>
                                                     <div className="text-lg text-gray-400">
+=======
+                                                    <div className="text-sm font-medium text-gray-900">
+                                                        {medicine.medicineName}
+                                                    </div>
+                                                    <div className="text-sm text-gray-500">
+                                                        {medicine.genericName}
+                                                    </div>
+                                                    <div className="text-xs text-gray-400">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         ID: {medicine.medicineId}
                                                     </div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-lg font-medium ${getCategoryColor(medicine.category)}`}>
+=======
+                                                <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getCategoryColor(medicine.category)}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     {medicine.category}
                                                 </span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <div className="text-lg text-gray-900">
                                                     {medicine.batchNumber}
                                                 </div>
@@ -277,26 +331,48 @@ const PharmacyInventory = () => {
                                                     Exp: {new Date(medicine.expiryDate).toLocaleDateString()}
                                                     {isExpired && (
                                                         <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-lg font-medium bg-red-100 text-red-800">
+=======
+                                                <div className="text-sm text-gray-900">
+                                                    {medicine.batchNumber}
+                                                </div>
+                                                <div className={`text-sm ${isExpired ? 'text-red-600' : 'text-gray-500'}`}>
+                                                    Exp: {new Date(medicine.expiryDate).toLocaleDateString()}
+                                                    {isExpired && (
+                                                        <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                             Expired
                                                         </span>
                                                     )}
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <div className="text-lg font-medium text-gray-900">
                                                     {medicine.quantity} {medicine.unit}
                                                 </div>
                                                 <div className="mt-1">
                                                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-lg font-medium ${stockStatus.color}`}>
+=======
+                                                <div className="text-sm font-medium text-gray-900">
+                                                    {medicine.quantity} {medicine.unit}
+                                                </div>
+                                                <div className="mt-1">
+                                                    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${stockStatus.color}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         {stockStatus.text}
                                                     </span>
                                                 </div>
                                                 {medicine.quantity <= medicine.reorderLevel && (
+<<<<<<< HEAD
                                                     <div className="mt-1 text-lg text-yellow-600">
+=======
+                                                    <div className="mt-1 text-xs text-yellow-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         Reorder at: {medicine.reorderLevel} {medicine.unit}
                                                     </div>
                                                 )}
                                             </td>
+<<<<<<< HEAD
                                             <td className="px-6 py-4 whitespace-nowrap text-lg text-gray-900">
                                                 ${medicine.unitPrice?.toFixed(2) || '0.00'}
                                             </td>
@@ -305,6 +381,21 @@ const PharmacyInventory = () => {
 
                                                     <Link
                                                         to={`/pharmacist/inventory/${medicine._id}/edit`}
+=======
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                                ${medicine.unitPrice?.toFixed(2) || '0.00'}
+                                            </td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                                <div className="flex space-x-2">
+                                                    <button
+                                                        onClick={() => handleUpdateStock(medicine._id, 'add', 10)}
+                                                        className="text-green-600 hover:text-green-900"
+                                                    >
+                                                        Add Stock
+                                                    </button>
+                                                    <Link
+                                                        to={`/pharmacy/inventory/${medicine._id}/edit`}
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         className="text-blue-600 hover:text-blue-900"
                                                     >
                                                         Edit
@@ -322,7 +413,11 @@ const PharmacyInventory = () => {
                     {totalPages > 1 && (
                         <div className="px-6 py-4 border-t border-gray-200 bg-gray-50">
                             <div className="flex items-center justify-between">
+<<<<<<< HEAD
                                 <div className="text-lg text-gray-700">
+=======
+                                <div className="text-sm text-gray-700">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Showing page {currentPage} of {totalPages}
                                 </div>
                                 <div className="flex space-x-2">
@@ -330,8 +425,13 @@ const PharmacyInventory = () => {
                                         onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                                         disabled={currentPage === 1}
                                         className={`px-3 py-1 rounded-lg ${currentPage === 1
+<<<<<<< HEAD
                                             ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                                             : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+=======
+                                                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                                                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             }`}
                                     >
                                         Previous
@@ -340,8 +440,13 @@ const PharmacyInventory = () => {
                                         onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                                         disabled={currentPage === totalPages}
                                         className={`px-3 py-1 rounded-lg ${currentPage === totalPages
+<<<<<<< HEAD
                                             ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                                             : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+=======
+                                                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                                                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             }`}
                                     >
                                         Next

@@ -220,7 +220,11 @@ const Billing = () => {
                     <div className="flex items-center">
                         <FaMoneyBillWave className="text-2xl text-blue-500 mr-3" />
                         <div>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Total Revenue</p>
+=======
+                            <p className="text-sm text-gray-500">Total Revenue</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold text-gray-900">
                                 {formatCurrency(invoices.filter(i => i.status === 'paid').reduce((sum, i) => sum + i.totalAmount, 0))}
                             </p>
@@ -232,7 +236,11 @@ const Billing = () => {
                     <div className="flex items-center">
                         <FaClock className="text-2xl text-yellow-500 mr-3" />
                         <div>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Pending</p>
+=======
+                            <p className="text-sm text-gray-500">Pending</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold text-gray-900">
                                 {invoices.filter(i => i.status === 'pending').length}
                             </p>
@@ -244,7 +252,11 @@ const Billing = () => {
                     <div className="flex items-center">
                         <FaExclamationTriangle className="text-2xl text-red-500 mr-3" />
                         <div>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Overdue</p>
+=======
+                            <p className="text-sm text-gray-500">Overdue</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold text-gray-900">
                                 {invoices.filter(i => i.status === 'overdue').length}
                             </p>
@@ -256,7 +268,11 @@ const Billing = () => {
                     <div className="flex items-center">
                         <FaCheckCircle className="text-2xl text-green-500 mr-3" />
                         <div>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Paid</p>
+=======
+                            <p className="text-sm text-gray-500">Paid</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold text-gray-900">
                                 {invoices.filter(i => i.status === 'paid').length}
                             </p>
@@ -269,7 +285,11 @@ const Billing = () => {
             <div className="bg-white rounded-lg shadow p-4 mb-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">Search</label>
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Search</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <div className="relative">
                             <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                             <input
@@ -284,13 +304,21 @@ const Billing = () => {
                     </div>
 
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">Status</label>
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <div className="flex flex-wrap gap-2">
                             {['all', 'pending', 'paid', 'partial', 'overdue', 'cancelled'].map(status => (
                                 <button
                                     key={status}
                                     onClick={() => setStatusFilter(status)}
+<<<<<<< HEAD
                                     className={`px-3 py-1 rounded-lg text-lg ${statusFilter === status ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+=======
+                                    className={`px-3 py-1 rounded-lg text-sm ${statusFilter === status ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 >
                                     {status.charAt(0).toUpperCase() + status.slice(1)}
                                 </button>
@@ -299,7 +327,11 @@ const Billing = () => {
                     </div>
 
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">Actions</label>
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Actions</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <button
                             onClick={loadBilling}
                             className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
@@ -357,6 +389,7 @@ const Billing = () => {
                                             <div className="font-medium text-gray-900">{invoice.invoiceId}</div>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                             <div className="text-lg text-gray-900">{invoice.patientName}</div>
                                             <div className="text-xs text-gray-500">ID: {invoice.patientId}</div>
                                         </td>
@@ -365,6 +398,16 @@ const Billing = () => {
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             <div className="text-lg font-medium text-gray-900">
+=======
+                                            <div className="text-sm text-gray-900">{invoice.patientName}</div>
+                                            <div className="text-xs text-gray-500">ID: {invoice.patientId}</div>
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            {invoice.date}
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap">
+                                            <div className="text-sm font-medium text-gray-900">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 {formatCurrency(invoice.totalAmount)}
                                             </div>
                                         </td>
@@ -374,7 +417,11 @@ const Billing = () => {
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             {getStatusBadge(invoice.status)}
                                         </td>
+<<<<<<< HEAD
                                         <td className="px-6 py-4 whitespace-nowrap text-lg font-medium">
+=======
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <div className="flex space-x-2">
                                                 <button
                                                     onClick={() => {
@@ -451,7 +498,11 @@ const Billing = () => {
                             <div className="space-y-6">
                                 {/* Patient Selection */}
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Select Patient *
                                     </label>
                                     <select
@@ -546,7 +597,11 @@ const Billing = () => {
 
                                 {/* Payment Method */}
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Payment Method
                                     </label>
                                     <select
@@ -566,7 +621,11 @@ const Billing = () => {
 
                                 {/* Notes */}
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">Notes</label>
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Notes</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <textarea
                                         value={newInvoice.notes}
                                         onChange={(e) => setNewInvoice({ ...newInvoice, notes: e.target.value })}
@@ -619,8 +678,13 @@ const Billing = () => {
                                 <div className="bg-blue-50 p-4 rounded-lg">
                                     <h4 className="font-medium text-blue-800 mb-2">Hospital Information</h4>
                                     <p className="text-gray-700">General Hospital</p>
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-600">123 Medical Street, City</p>
                                     <p className="text-lg text-gray-600">Phone: (555) 123-4567</p>
+=======
+                                    <p className="text-sm text-gray-600">123 Medical Street, City</p>
+                                    <p className="text-sm text-gray-600">Phone: (555) 123-4567</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 </div>
 
                                 <div className="bg-green-50 p-4 rounded-lg">
@@ -660,10 +724,17 @@ const Billing = () => {
                                         <tbody className="bg-white divide-y divide-gray-200">
                                             {selectedInvoice.items.map((item, index) => (
                                                 <tr key={index}>
+<<<<<<< HEAD
                                                     <td className="px-4 py-2 text-lg text-gray-900">
                                                         {item.description}
                                                     </td>
                                                     <td className="px-4 py-2 text-lg text-gray-900">
+=======
+                                                    <td className="px-4 py-2 text-sm text-gray-900">
+                                                        {item.description}
+                                                    </td>
+                                                    <td className="px-4 py-2 text-sm text-gray-900">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         {formatCurrency(item.amount)}
                                                     </td>
                                                 </tr>
@@ -671,10 +742,17 @@ const Billing = () => {
                                         </tbody>
                                         <tfoot className="bg-gray-50">
                                             <tr>
+<<<<<<< HEAD
                                                 <td className="px-4 py-2 text-lg font-medium text-gray-900">
                                                     Total Amount
                                                 </td>
                                                 <td className="px-4 py-2 text-lg font-bold text-gray-900">
+=======
+                                                <td className="px-4 py-2 text-sm font-medium text-gray-900">
+                                                    Total Amount
+                                                </td>
+                                                <td className="px-4 py-2 text-sm font-bold text-gray-900">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     {formatCurrency(selectedInvoice.totalAmount)}
                                                 </td>
                                             </tr>
@@ -731,7 +809,11 @@ const Billing = () => {
                                 </div>
 
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Amount Received *
                                     </label>
                                     <div className="relative">
@@ -748,7 +830,11 @@ const Billing = () => {
                                 </div>
 
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Payment Method *
                                     </label>
                                     <select
@@ -765,7 +851,11 @@ const Billing = () => {
                                 </div>
 
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Transaction ID (Optional)
                                     </label>
                                     <input
@@ -778,7 +868,11 @@ const Billing = () => {
                                 </div>
 
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Notes
                                     </label>
                                     <textarea
@@ -795,7 +889,11 @@ const Billing = () => {
                                         <div className="flex items-center">
                                             <FaExclamationTriangle className="text-yellow-500 mr-2" />
                                             <div>
+<<<<<<< HEAD
                                                 <p className="text-lg font-medium text-yellow-800">Partial Payment</p>
+=======
+                                                <p className="text-sm font-medium text-yellow-800">Partial Payment</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <p className="text-xs text-yellow-700">
                                                     Remaining balance: {formatCurrency(selectedInvoice.totalAmount - paymentData.amount)}
                                                 </p>

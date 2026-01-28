@@ -221,7 +221,11 @@ const CheckIn = () => {
                     <div className="flex items-center">
                         <FaCalendarAlt className="text-2xl text-blue-500 mr-3" />
                         <div>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Todays Appointments</p>
+=======
+                            <p className="text-sm text-gray-500">Todays Appointments</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold text-gray-900">
                                 {appointments.length}
                             </p>
@@ -233,7 +237,11 @@ const CheckIn = () => {
                     <div className="flex items-center">
                         <FaCheckCircle className="text-2xl text-green-500 mr-3" />
                         <div>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Checked In</p>
+=======
+                            <p className="text-sm text-gray-500">Checked In</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold text-gray-900">
                                 {appointments.filter(a => a.status === 'checked-in').length}
                             </p>
@@ -245,7 +253,11 @@ const CheckIn = () => {
                     <div className="flex items-center">
                         <FaClock className="text-2xl text-yellow-500 mr-3" />
                         <div>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Scheduled</p>
+=======
+                            <p className="text-sm text-gray-500">Scheduled</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold text-gray-900">
                                 {appointments.filter(a => a.status === 'scheduled').length}
                             </p>
@@ -257,7 +269,11 @@ const CheckIn = () => {
                     <div className="flex items-center">
                         <FaStethoscope className="text-2xl text-purple-500 mr-3" />
                         <div>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">In Progress</p>
+=======
+                            <p className="text-sm text-gray-500">In Progress</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold text-gray-900">
                                 {appointments.filter(a => a.status === 'in-progress').length}
                             </p>
@@ -270,7 +286,11 @@ const CheckIn = () => {
             <div className="bg-white rounded-lg shadow p-4 mb-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">Search</label>
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Search</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <div className="relative">
                             <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                             <input
@@ -285,13 +305,21 @@ const CheckIn = () => {
                     </div>
 
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">Status</label>
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <div className="flex flex-wrap gap-2">
                             {['scheduled', 'confirmed', 'checked-in', 'in-progress', 'completed', 'cancelled'].map(status => (
                                 <button
                                     key={status}
                                     onClick={() => setStatusFilter(status)}
+<<<<<<< HEAD
                                     className={`px-3 py-1 rounded-lg text-lg ${statusFilter === status ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+=======
+                                    className={`px-3 py-1 rounded-lg text-sm ${statusFilter === status ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 >
                                     {status.charAt(0).toUpperCase() + status.slice(1)}
                                 </button>
@@ -300,7 +328,11 @@ const CheckIn = () => {
                     </div>
 
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-1">Actions</label>
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Actions</label>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <button
                             onClick={loadAppointments}
                             className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
@@ -356,7 +388,11 @@ const CheckIn = () => {
                                     <tr key={appointment.id} className="hover:bg-gray-50">
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             <div className="font-medium text-gray-900">#{appointment.appointmentId}</div>
+<<<<<<< HEAD
                                             <div className="text-lg text-gray-500">{appointment.reason}</div>
+=======
+                                            <div className="text-sm text-gray-500">{appointment.reason}</div>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             <div className="flex items-center">
@@ -384,7 +420,11 @@ const CheckIn = () => {
                                             <div className="flex items-center">
                                                 <FaCalendarAlt className="text-gray-400 mr-2" />
                                                 <div>
+<<<<<<< HEAD
                                                     <div className="text-lg text-gray-900">{appointment.appointmentDate}</div>
+=======
+                                                    <div className="text-sm text-gray-900">{appointment.appointmentDate}</div>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     <div className="text-xs text-gray-500">{appointment.time}</div>
                                                 </div>
                                             </div>
@@ -398,7 +438,11 @@ const CheckIn = () => {
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             {getStatusBadge(appointment.status)}
                                         </td>
+<<<<<<< HEAD
                                         <td className="px-6 py-4 whitespace-nowrap text-lg font-medium">
+=======
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <div className="flex space-x-2">
                                                 {(appointment.status === 'scheduled' || appointment.status === 'confirmed') && (
                                                     <button
@@ -467,7 +511,11 @@ const CheckIn = () => {
                             <div className="space-y-6">
                                 {/* Patient Selection */}
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Select Patient *
                                     </label>
                                     <select
@@ -487,7 +535,11 @@ const CheckIn = () => {
 
                                 {/* Doctor Selection */}
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Select Doctor *
                                     </label>
                                     <select
@@ -508,7 +560,11 @@ const CheckIn = () => {
                                 {/* Date and Time */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Appointment Date *
                                         </label>
                                         <input
@@ -521,7 +577,11 @@ const CheckIn = () => {
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Time Slot *
                                         </label>
                                         <select
@@ -541,7 +601,11 @@ const CheckIn = () => {
                                 {/* Type and Priority */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Appointment Type *
                                         </label>
                                         <select
@@ -559,7 +623,11 @@ const CheckIn = () => {
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Priority *
                                         </label>
                                         <select
@@ -578,7 +646,11 @@ const CheckIn = () => {
 
                                 {/* Reason */}
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Reason for Visit *
                                     </label>
                                     <textarea
@@ -596,8 +668,13 @@ const CheckIn = () => {
                                     <div className="flex">
                                         <FaHospital className="text-blue-500 mr-3 flex-shrink-0" />
                                         <div>
+<<<<<<< HEAD
                                             <h4 className="text-lg font-medium text-blue-800">Appointment Scheduling</h4>
                                             <p className="text-lg text-blue-700 mt-1">
+=======
+                                            <h4 className="text-sm font-medium text-blue-800">Appointment Scheduling</h4>
+                                            <p className="text-sm text-blue-700 mt-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Standard appointment duration is 30 minutes. Emergency cases will be prioritized.
                                                 Please verify doctor availability before confirming.
                                             </p>

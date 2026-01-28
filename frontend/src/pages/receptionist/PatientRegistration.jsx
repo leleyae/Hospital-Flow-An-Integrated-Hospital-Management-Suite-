@@ -286,7 +286,11 @@ const PatientRegistration = () => {
                         <h3 className="text-lg font-semibold text-blue-700">Personal Information</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     First Name *
                                 </label>
                                 <input
@@ -299,11 +303,19 @@ const PatientRegistration = () => {
                                     className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.firstName ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                 />
+<<<<<<< HEAD
                                 {errors.firstName && <p className="mt-1 text-lg text-red-600">{errors.firstName}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors.firstName && <p className="mt-1 text-sm text-red-600">{errors.firstName}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Last Name *
                                 </label>
                                 <input
@@ -316,11 +328,19 @@ const PatientRegistration = () => {
                                     className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.lastName ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                 />
+<<<<<<< HEAD
                                 {errors.lastName && <p className="mt-1 text-lg text-red-600">{errors.lastName}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors.lastName && <p className="mt-1 text-sm text-red-600">{errors.lastName}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Gender *
                                 </label>
                                 <select
@@ -337,11 +357,19 @@ const PatientRegistration = () => {
                                     <option value="Female">Female</option>
                                     <option value="Other">Other</option>
                                 </select>
+<<<<<<< HEAD
                                 {errors.gender && <p className="mt-1 text-lg text-red-600">{errors.gender}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors.gender && <p className="mt-1 text-sm text-red-600">{errors.gender}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Date of Birth *
                                 </label>
                                 <input
@@ -355,11 +383,19 @@ const PatientRegistration = () => {
                                     className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.dateOfBirth ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                 />
+<<<<<<< HEAD
                                 {errors.dateOfBirth && <p className="mt-1 text-lg text-red-600">{errors.dateOfBirth}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors.dateOfBirth && <p className="mt-1 text-sm text-red-600">{errors.dateOfBirth}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Phone Number *
                                 </label>
                                 <input
@@ -373,11 +409,19 @@ const PatientRegistration = () => {
                                         }`}
                                     placeholder="+1 (555) 123-4567"
                                 />
+<<<<<<< HEAD
                                 {errors.phone && <p className="mt-1 text-lg text-red-600">{errors.phone}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Email Address *
                                 </label>
                                 <input
@@ -391,11 +435,19 @@ const PatientRegistration = () => {
                                         }`}
                                     placeholder="patient@example.com"
                                 />
+<<<<<<< HEAD
                                 {errors.email && <p className="mt-1 text-lg text-red-600">{errors.email}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Username *
                                 </label>
                                 <input
@@ -409,11 +461,19 @@ const PatientRegistration = () => {
                                         }`}
                                     placeholder="john.doe"
                                 />
+<<<<<<< HEAD
                                 {errors.username && <p className="mt-1 text-lg text-red-600">{errors.username}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors.username && <p className="mt-1 text-sm text-red-600">{errors.username}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Auto-generated Password
                                 </label>
                                 <div className="flex space-x-2">
@@ -454,7 +514,11 @@ const PatientRegistration = () => {
                         <h3 className="text-lg font-semibold text-green-700">Address Information</h3>
                         <div className="space-y-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Street Address *
                                 </label>
                                 <input
@@ -467,12 +531,20 @@ const PatientRegistration = () => {
                                     className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${errors.address ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                 />
+<<<<<<< HEAD
                                 {errors.address && <p className="mt-1 text-lg text-red-600">{errors.address}</p>}
+=======
+                                {errors.address && <p className="mt-1 text-sm text-red-600">{errors.address}</p>}
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div>
+<<<<<<< HEAD
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         City *
                                     </label>
                                     <input
@@ -485,11 +557,19 @@ const PatientRegistration = () => {
                                         className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${errors.city ? 'border-red-500' : 'border-gray-300'
                                             }`}
                                     />
+<<<<<<< HEAD
                                     {errors.city && <p className="mt-1 text-lg text-red-600">{errors.city}</p>}
                                 </div>
 
                                 <div>
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    {errors.city && <p className="mt-1 text-sm text-red-600">{errors.city}</p>}
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         State *
                                     </label>
                                     <input
@@ -502,11 +582,19 @@ const PatientRegistration = () => {
                                         className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${errors.state ? 'border-red-500' : 'border-gray-300'
                                             }`}
                                     />
+<<<<<<< HEAD
                                     {errors.state && <p className="mt-1 text-lg text-red-600">{errors.state}</p>}
                                 </div>
 
                                 <div>
                                     <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                    {errors.state && <p className="mt-1 text-sm text-red-600">{errors.state}</p>}
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         ZIP Code *
                                     </label>
                                     <input
@@ -519,7 +607,11 @@ const PatientRegistration = () => {
                                         className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${errors.zipCode ? 'border-red-500' : 'border-gray-300'
                                             }`}
                                     />
+<<<<<<< HEAD
                                     {errors.zipCode && <p className="mt-1 text-lg text-red-600">{errors.zipCode}</p>}
+=======
+                                    {errors.zipCode && <p className="mt-1 text-sm text-red-600">{errors.zipCode}</p>}
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 </div>
                             </div>
                         </div>
@@ -532,7 +624,11 @@ const PatientRegistration = () => {
                         <h3 className="text-lg font-semibold text-red-700">Emergency Contact</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Contact Name *
                                 </label>
                                 <input
@@ -545,11 +641,19 @@ const PatientRegistration = () => {
                                     className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 ${errors['emergencyContact.name'] ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                 />
+<<<<<<< HEAD
                                 {errors['emergencyContact.name'] && <p className="mt-1 text-lg text-red-600">{errors['emergencyContact.name']}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors['emergencyContact.name'] && <p className="mt-1 text-sm text-red-600">{errors['emergencyContact.name']}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Relationship *
                                 </label>
                                 <select
@@ -569,11 +673,19 @@ const PatientRegistration = () => {
                                     <option value="Friend">Friend</option>
                                     <option value="Other">Other</option>
                                 </select>
+<<<<<<< HEAD
                                 {errors['emergencyContact.relationship'] && <p className="mt-1 text-lg text-red-600">{errors['emergencyContact.relationship']}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors['emergencyContact.relationship'] && <p className="mt-1 text-sm text-red-600">{errors['emergencyContact.relationship']}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Phone Number *
                                 </label>
                                 <input
@@ -586,7 +698,11 @@ const PatientRegistration = () => {
                                     className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 ${errors['emergencyContact.phone'] ? 'border-red-500' : 'border-gray-300'
                                         }`}
                                 />
+<<<<<<< HEAD
                                 {errors['emergencyContact.phone'] && <p className="mt-1 text-lg text-red-600">{errors['emergencyContact.phone']}</p>}
+=======
+                                {errors['emergencyContact.phone'] && <p className="mt-1 text-sm text-red-600">{errors['emergencyContact.phone']}</p>}
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                         </div>
                     </div>
@@ -598,7 +714,11 @@ const PatientRegistration = () => {
                         <h3 className="text-lg font-semibold text-purple-700">Medical Information</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Blood Group
                                 </label>
                                 <select
@@ -620,7 +740,11 @@ const PatientRegistration = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Height (cm)
                                 </label>
                                 <input
@@ -635,11 +759,19 @@ const PatientRegistration = () => {
                                     min="30"
                                     max="250"
                                 />
+<<<<<<< HEAD
                                 {errors.height && <p className="mt-1 text-lg text-red-600">{errors.height}</p>}
                             </div>
 
                             <div>
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                {errors.height && <p className="mt-1 text-sm text-red-600">{errors.height}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Weight (kg)
                                 </label>
                                 <input
@@ -654,7 +786,11 @@ const PatientRegistration = () => {
                                     min="2"
                                     max="300"
                                 />
+<<<<<<< HEAD
                                 {errors.weight && <p className="mt-1 text-lg text-red-600">{errors.weight}</p>}
+=======
+                                {errors.weight && <p className="mt-1 text-sm text-red-600">{errors.weight}</p>}
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                         </div>
                     </div>
@@ -666,7 +802,11 @@ const PatientRegistration = () => {
                         <h3 className="text-lg font-semibold text-yellow-700">Insurance Information</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Insurance Provider
                                 </label>
                                 <input
@@ -680,7 +820,11 @@ const PatientRegistration = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Policy Number
                                 </label>
                                 <input
@@ -694,7 +838,11 @@ const PatientRegistration = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Valid Until
                                 </label>
                                 <input
@@ -716,7 +864,11 @@ const PatientRegistration = () => {
                         <h3 className="text-lg font-semibold text-pink-700">Medical History</h3>
                         <div className="grid grid-cols-1 gap-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Allergies
                                 </label>
                                 <textarea
@@ -734,7 +886,11 @@ Dust"
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Medical Conditions
                                 </label>
                                 <textarea
@@ -752,7 +908,11 @@ Asthma"
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-1">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Family History
                                 </label>
                                 <textarea
@@ -825,14 +985,22 @@ Mother - Diabetes (Age 60)"
                                         <button
                                             type="button"
                                             onClick={() => setShowPassword(!showPassword)}
+<<<<<<< HEAD
                                             className="text-lg text-blue-600 hover:text-blue-800"
+=======
+                                            className="text-sm text-blue-600 hover:text-blue-800"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         >
                                             {showPassword ? 'Hide' : 'Show'} Password
                                         </button>
                                         <button
                                             type="button"
                                             onClick={copyPassword}
+<<<<<<< HEAD
                                             className="text-lg text-green-600 hover:text-green-800"
+=======
+                                            className="text-sm text-green-600 hover:text-green-800"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         >
                                             Copy Password
                                         </button>
@@ -847,19 +1015,31 @@ Mother - Diabetes (Age 60)"
                                         {formData.allergies && (
                                             <div>
                                                 <h5 className="font-medium text-gray-600">Allergies:</h5>
+<<<<<<< HEAD
                                                 <p className="text-lg">{formData.allergies.split('\n').filter(a => a.trim()).join(', ')}</p>
+=======
+                                                <p className="text-sm">{formData.allergies.split('\n').filter(a => a.trim()).join(', ')}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             </div>
                                         )}
                                         {formData.medicalConditions && (
                                             <div>
                                                 <h5 className="font-medium text-gray-600">Conditions:</h5>
+<<<<<<< HEAD
                                                 <p className="text-lg">{formData.medicalConditions.split('\n').filter(c => c.trim()).join(', ')}</p>
+=======
+                                                <p className="text-sm">{formData.medicalConditions.split('\n').filter(c => c.trim()).join(', ')}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             </div>
                                         )}
                                         {formData.familyHistory && (
                                             <div>
                                                 <h5 className="font-medium text-gray-600">Family History:</h5>
+<<<<<<< HEAD
                                                 <p className="text-lg">{formData.familyHistory.split('\n').filter(f => f.trim()).join(', ')}</p>
+=======
+                                                <p className="text-sm">{formData.familyHistory.split('\n').filter(f => f.trim()).join(', ')}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             </div>
                                         )}
                                     </div>
@@ -869,7 +1049,11 @@ Mother - Diabetes (Age 60)"
 
                         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                             <h4 className="font-semibold text-blue-700 mb-2">⚠️ Important Notes:</h4>
+<<<<<<< HEAD
                             <ul className="text-lg text-blue-600 space-y-1">
+=======
+                            <ul className="text-sm text-blue-600 space-y-1">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 <li>• Patient will receive auto-generated Patient ID upon registration</li>
                                 <li>• Username and password will be provided to the patient</li>
                                 <li>• Patient can change their password after first login</li>
@@ -902,14 +1086,22 @@ Mother - Diabetes (Age 60)"
                                 <div className={`relative z-10 w-8 h-8 rounded-full flex items-center justify-center ${step.number <= currentStep ? step.color : 'bg-gray-300'} text-white font-semibold`}>
                                     {step.number <= currentStep ? step.icon : step.number}
                                 </div>
+<<<<<<< HEAD
                                 <span className={`mt-2 text-lg font-medium ${step.number <= currentStep ? 'text-gray-900' : 'text-gray-500'}`}>
+=======
+                                <span className={`mt-2 text-sm font-medium ${step.number <= currentStep ? 'text-gray-900' : 'text-gray-500'}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     {step.title}
                                 </span>
                             </div>
                         ))}
                     </div>
                     <div className="mt-4 text-center">
+<<<<<<< HEAD
                         <p className="text-lg font-medium text-gray-700">
+=======
+                        <p className="text-sm font-medium text-gray-700">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Step {currentStep} of {steps.length}: {steps[currentStep - 1].title}
                         </p>
                     </div>
@@ -986,7 +1178,11 @@ Mother - Diabetes (Age 60)"
                 </div>
 
                 {/* Help Text */}
+<<<<<<< HEAD
                 <div className="mt-6 text-center text-lg text-gray-500">
+=======
+                <div className="mt-6 text-center text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p>All fields marked with * are required. Patient credentials will be auto-generated.</p>
                 </div>
             </div>

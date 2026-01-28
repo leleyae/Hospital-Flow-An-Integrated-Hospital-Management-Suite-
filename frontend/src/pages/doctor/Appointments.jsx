@@ -126,7 +126,11 @@ const Appointments = () => {
                     <div className="flex items-center space-x-4">
                         <div className="flex items-center">
                             <Filter className="w-5 h-5 text-gray-400 mr-2" />
+<<<<<<< HEAD
                             <span className="text-lg font-medium text-gray-700">Filter by:</span>
+=======
+                            <span className="text-sm font-medium text-gray-700">Filter by:</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         </div>
 
                         <div className="flex flex-wrap gap-2">
@@ -134,7 +138,11 @@ const Appointments = () => {
                                 <button
                                     key={status.id}
                                     onClick={() => setSelectedStatus(status.id)}
+<<<<<<< HEAD
                                     className={`px-3 py-1.5 rounded-full text-lg font-medium transition-colors duration-200 ${selectedStatus === status.id
+=======
+                                    className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 ${selectedStatus === status.id
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         ? 'bg-blue-600 text-white'
                                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                         }`}
@@ -167,7 +175,11 @@ const Appointments = () => {
                                 }}
                                 className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
                             />
+<<<<<<< HEAD
                             <span className="text-lg text-gray-700">Today Only</span>
+=======
+                            <span className="text-sm text-gray-700">Today Only</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         </label>
 
                         {(selectedDate || showTodayOnly) && (
@@ -176,7 +188,11 @@ const Appointments = () => {
                                     setSelectedDate('');
                                     setShowTodayOnly(false);
                                 }}
+<<<<<<< HEAD
                                 className="text-lg text-gray-600 hover:text-gray-900"
+=======
+                                className="text-sm text-gray-600 hover:text-gray-900"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 Clear Date
                             </button>
@@ -193,7 +209,11 @@ const Appointments = () => {
                             <Calendar className="w-6 h-6 text-blue-600 mr-3" />
                             <h2 className="text-xl font-bold text-gray-900">
                                 {showTodayOnly ? "Today's Appointments" : "All Appointments"}
+<<<<<<< HEAD
                                 <span className="ml-2 text-lg font-normal text-gray-500">
+=======
+                                <span className="ml-2 text-sm font-normal text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     ({appointments.length} found)
                                 </span>
                             </h2>
@@ -216,11 +236,19 @@ const Appointments = () => {
                                                 {appointment.patientId?.userId?.firstName} {appointment.patientId?.userId?.lastName}
                                             </h3>
                                             <div className="flex items-center mt-1 space-x-4">
+<<<<<<< HEAD
                                                 <span className="flex items-center text-lg text-gray-500">
                                                     <Phone className="w-3 h-3 mr-1" />
                                                     {appointment.patientId?.userId?.phoneNumber || 'N/A'}
                                                 </span>
                                                 <span className="text-lg text-gray-500">
+=======
+                                                <span className="flex items-center text-sm text-gray-500">
+                                                    <Phone className="w-3 h-3 mr-1" />
+                                                    {appointment.patientId?.userId?.phoneNumber || 'N/A'}
+                                                </span>
+                                                <span className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     ID: {appointment.patientId?.patientId}
                                                 </span>
                                             </div>
@@ -236,7 +264,11 @@ const Appointments = () => {
                                     <div className="flex flex-col space-y-2">
                                         <div className="flex items-center text-gray-600">
                                             <Calendar className="w-4 h-4 mr-2" />
+<<<<<<< HEAD
                                             <span className="text-lg">
+=======
+                                            <span className="text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 {new Date(appointment.appointmentDate).toLocaleDateString('en-US', {
                                                     weekday: 'long',
                                                     year: 'numeric',
@@ -247,11 +279,19 @@ const Appointments = () => {
                                         </div>
                                         <div className="flex items-center text-gray-600">
                                             <Clock className="w-4 h-4 mr-2" />
+<<<<<<< HEAD
                                             <span className="text-lg font-medium">
                                                 {formatTime(appointment.startTime)} - {formatTime(appointment.endTime)}
                                             </span>
                                         </div>
                                         <div className="text-lg text-gray-500">
+=======
+                                            <span className="text-sm font-medium">
+                                                {formatTime(appointment.startTime)} - {formatTime(appointment.endTime)}
+                                            </span>
+                                        </div>
+                                        <div className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             Type: <span className="font-medium capitalize">{appointment.appointmentType}</span>
                                         </div>
                                     </div>
@@ -314,7 +354,11 @@ const Appointments = () => {
                                 {/* Additional Info */}
                                 {appointment.reason && (
                                     <div className="mt-4 pt-4 border-t border-gray-200">
+<<<<<<< HEAD
                                         <p className="text-lg text-gray-600">
+=======
+                                        <p className="text-sm text-gray-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             <span className="font-medium">Reason:</span> {appointment.reason}
                                         </p>
                                     </div>
@@ -338,33 +382,53 @@ const Appointments = () => {
             {/* Stats */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-blue-600 font-medium">Total</p>
+=======
+                    <p className="text-sm text-blue-600 font-medium">Total</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-blue-900">{appointments.length}</p>
                 </div>
 
                 <div className="bg-green-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-green-600 font-medium">Confirmed</p>
+=======
+                    <p className="text-sm text-green-600 font-medium">Confirmed</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-green-900">
                         {appointments.filter(a => a.status === 'confirmed').length}
                     </p>
                 </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-yellow-600 font-medium">In Progress</p>
+=======
+                    <p className="text-sm text-yellow-600 font-medium">In Progress</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-yellow-900">
                         {appointments.filter(a => a.status === 'in-progress').length}
                     </p>
                 </div>
 
                 <div className="bg-purple-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-purple-600 font-medium">Completed</p>
+=======
+                    <p className="text-sm text-purple-600 font-medium">Completed</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-purple-900">
                         {appointments.filter(a => a.status === 'completed').length}
                     </p>
                 </div>
 
                 <div className="bg-red-50 p-4 rounded-lg">
+<<<<<<< HEAD
                     <p className="text-lg text-red-600 font-medium">Cancelled</p>
+=======
+                    <p className="text-sm text-red-600 font-medium">Cancelled</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     <p className="text-2xl font-bold text-red-900">
                         {appointments.filter(a => a.status === 'cancelled').length}
                     </p>

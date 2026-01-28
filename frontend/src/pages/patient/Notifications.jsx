@@ -133,7 +133,11 @@ const Notifications = () => {
                             <Bell className="w-6 h-6 text-blue-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Total</p>
+=======
+                            <p className="text-sm text-gray-500">Total</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">{notifications.length}</p>
                         </div>
                     </div>
@@ -145,7 +149,11 @@ const Notifications = () => {
                             <AlertTriangle className="w-6 h-6 text-red-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Unread</p>
+=======
+                            <p className="text-sm text-gray-500">Unread</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">{unreadCount}</p>
                         </div>
                     </div>
@@ -157,7 +165,11 @@ const Notifications = () => {
                             <Calendar className="w-6 h-6 text-blue-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Appointments</p>
+=======
+                            <p className="text-sm text-gray-500">Appointments</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">{notifications.filter(n => n.type === 'appointment').length}</p>
                         </div>
                     </div>
@@ -169,7 +181,11 @@ const Notifications = () => {
                             <Pill className="w-6 h-6 text-green-600" />
                         </div>
                         <div className="ml-4">
+<<<<<<< HEAD
                             <p className="text-lg text-gray-500">Prescriptions</p>
+=======
+                            <p className="text-sm text-gray-500">Prescriptions</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">{notifications.filter(n => n.type === 'prescription').length}</p>
                         </div>
                     </div>
@@ -226,7 +242,11 @@ const Notifications = () => {
                                             )}
                                         </div>
                                         <p className="text-gray-700 mt-2">{notification.message}</p>
+<<<<<<< HEAD
                                         <p className="text-lg text-gray-500 mt-2">{notification.date}</p>
+=======
+                                        <p className="text-sm text-gray-500 mt-2">{notification.date}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
                                 </div>
 
@@ -261,7 +281,11 @@ const Notifications = () => {
                     <div className="flex items-center justify-between">
                         <div>
                             <p className="font-medium">Appointment Reminders</p>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-600">Receive reminders for upcoming appointments</p>
+=======
+                            <p className="text-sm text-gray-600">Receive reminders for upcoming appointments</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         </div>
                         <label className="relative inline-flex items-center cursor-pointer">
                             <input type="checkbox" className="sr-only peer" defaultChecked />
@@ -272,7 +296,11 @@ const Notifications = () => {
                     <div className="flex items-center justify-between">
                         <div>
                             <p className="font-medium">Prescription Alerts</p>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-600">Notifications for prescription updates</p>
+=======
+                            <p className="text-sm text-gray-600">Notifications for prescription updates</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         </div>
                         <label className="relative inline-flex items-center cursor-pointer">
                             <input type="checkbox" className="sr-only peer" defaultChecked />
@@ -283,7 +311,11 @@ const Notifications = () => {
                     <div className="flex items-center justify-between">
                         <div>
                             <p className="font-medium">Lab Results</p>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-600">Alerts when lab results are available</p>
+=======
+                            <p className="text-sm text-gray-600">Alerts when lab results are available</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         </div>
                         <label className="relative inline-flex items-center cursor-pointer">
                             <input type="checkbox" className="sr-only peer" defaultChecked />
@@ -294,7 +326,11 @@ const Notifications = () => {
                     <div className="flex items-center justify-between">
                         <div>
                             <p className="font-medium">Billing Notifications</p>
+<<<<<<< HEAD
                             <p className="text-lg text-gray-600">Payment reminders and invoice updates</p>
+=======
+                            <p className="text-sm text-gray-600">Payment reminders and invoice updates</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         </div>
                         <label className="relative inline-flex items-center cursor-pointer">
                             <input type="checkbox" className="sr-only peer" defaultChecked />

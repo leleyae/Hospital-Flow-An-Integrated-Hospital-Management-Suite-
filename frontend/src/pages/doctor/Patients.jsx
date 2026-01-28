@@ -138,7 +138,11 @@ const Patients = () => {
                     <div className="mt-6 p-4 border border-gray-200 rounded-lg bg-gray-50">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Blood Group
                                 </label>
                                 <select
@@ -154,7 +158,11 @@ const Patients = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Last Visit
                                 </label>
                                 <select
@@ -170,7 +178,11 @@ const Patients = () => {
                             </div>
 
                             <div>
+<<<<<<< HEAD
                                 <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Allergies
                                 </label>
                                 <select
@@ -223,7 +235,11 @@ const Patients = () => {
                                             <h3 className="font-bold text-gray-900 text-lg">
                                                 {patient.userId?.firstName} {patient.userId?.lastName}
                                             </h3>
+<<<<<<< HEAD
                                             <p className="text-lg text-gray-500">ID: {patient.patientId}</p>
+=======
+                                            <p className="text-sm text-gray-500">ID: {patient.patientId}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </div>
                                     </div>
                                     <button className="text-gray-400 hover:text-gray-600">
@@ -235,17 +251,29 @@ const Patients = () => {
                                 <div className="space-y-3 mb-6">
                                     <div className="flex items-center text-gray-600">
                                         <Phone className="w-4 h-4 mr-2" />
+<<<<<<< HEAD
                                         <span className="text-lg">{patient.userId?.phoneNumber || 'N/A'}</span>
                                     </div>
                                     <div className="flex items-center text-gray-600">
                                         <Calendar className="w-4 h-4 mr-2" />
                                         <span className="text-lg">
+=======
+                                        <span className="text-sm">{patient.userId?.phoneNumber || 'N/A'}</span>
+                                    </div>
+                                    <div className="flex items-center text-gray-600">
+                                        <Calendar className="w-4 h-4 mr-2" />
+                                        <span className="text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             {patient.bloodGroup ? `Blood Group: ${patient.bloodGroup}` : 'Blood Group: N/A'}
                                         </span>
                                     </div>
                                     <div className="flex items-center text-gray-600">
                                         <Activity className="w-4 h-4 mr-2" />
+<<<<<<< HEAD
                                         <span className="text-lg">
+=======
+                                        <span className="text-sm">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                             {patient.height && patient.weight
                                                 ? `${patient.height}cm, ${patient.weight}kg`
                                                 : 'Vitals: N/A'}
@@ -260,7 +288,11 @@ const Patients = () => {
                                         className="p-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors duration-200 flex flex-col items-center"
                                     >
                                         <Eye className="w-4 h-4 mb-1" />
+<<<<<<< HEAD
                                         <span className="text-lg font-medium">View Appointments</span>  {/* Changed text */}
+=======
+                                        <span className="text-xs font-medium">View Appointments</span>  {/* Changed text */}
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </Link>
 
                                     <Link
@@ -268,7 +300,11 @@ const Patients = () => {
                                         className="p-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-100 transition-colors duration-200 flex flex-col items-center"
                                     >
                                         <FileText className="w-4 h-4 mb-1" />
+<<<<<<< HEAD
                                         <span className="text-lg font-medium">Records</span>
+=======
+                                        <span className="text-xs font-medium">Records</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </Link>
 
                                 </div>
@@ -277,7 +313,11 @@ const Patients = () => {
                             {/* Allergies */}
                             {patient.allergies && patient.allergies.length > 0 && (
                                 <div className="bg-red-50 px-6 py-3 border-t border-red-100">
+<<<<<<< HEAD
                                     <p className="text-lg font-medium text-red-700">
+=======
+                                    <p className="text-xs font-medium text-red-700">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         ⚠️ Allergies: {patient.allergies.map(a => a.allergen).join(', ')}
                                     </p>
                                 </div>
@@ -301,26 +341,42 @@ const Patients = () => {
             {patients.length > 0 && (
                 <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div className="bg-blue-50 p-4 rounded-lg">
+<<<<<<< HEAD
                         <p className="text-lg text-blue-600 font-medium">Total Patients</p>
+=======
+                        <p className="text-sm text-blue-600 font-medium">Total Patients</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <p className="text-2xl font-bold text-blue-900">{patients.length}</p>
                     </div>
 
                     <div className="bg-green-50 p-4 rounded-lg">
+<<<<<<< HEAD
                         <p className="text-lg text-green-600 font-medium">With Allergies</p>
+=======
+                        <p className="text-sm text-green-600 font-medium">With Allergies</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <p className="text-2xl font-bold text-green-900">
                             {patients.filter(p => p.allergies && p.allergies.length > 0).length}
                         </p>
                     </div>
 
                     <div className="bg-purple-50 p-4 rounded-lg">
+<<<<<<< HEAD
                         <p className="text-lg text-purple-600 font-medium">Blood Group O+</p>
+=======
+                        <p className="text-sm text-purple-600 font-medium">Blood Group O+</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <p className="text-2xl font-bold text-purple-900">
                             {patients.filter(p => p.bloodGroup === 'O+').length}
                         </p>
                     </div>
 
                     <div className="bg-yellow-50 p-4 rounded-lg">
+<<<<<<< HEAD
                         <p className="text-lg text-yellow-600 font-medium">Recent (Last 7d)</p>
+=======
+                        <p className="text-sm text-yellow-600 font-medium">Recent (Last 7d)</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                         <p className="text-2xl font-bold text-yellow-900">0</p>
                     </div>
                 </div>

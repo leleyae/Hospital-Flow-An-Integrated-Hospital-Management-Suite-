@@ -147,7 +147,11 @@ const MedicineList = () => {
                             </Link>
                             <button
                                 onClick={handleRefresh}
+<<<<<<< HEAD
                                 className="inline-flex items-center px-4 py-2 border border-gray-300 text-lg font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+=======
+                                className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 <ArrowPathIcon className="h-4 w-4 mr-2" />
                                 Refresh
@@ -250,7 +254,11 @@ const MedicineList = () => {
 
                             <button
                                 onClick={handleSearch}
+<<<<<<< HEAD
                                 className="inline-flex items-center px-4 py-2 border border-gray-300 text-lg font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+=======
+                                className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             >
                                 <FunnelIcon className="h-4 w-4 mr-2" />
                                 Filter
@@ -266,7 +274,11 @@ const MedicineList = () => {
                             <h3 className="text-lg font-medium text-gray-900">
                                 Medicines ({totalItems})
                             </h3>
+<<<<<<< HEAD
                             <div className="text-lg text-gray-500">
+=======
+                            <div className="text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 Page {currentPage} of {totalPages}
                             </div>
                         </div>
@@ -276,6 +288,7 @@ const MedicineList = () => {
                         <table className="min-w-full divide-y divide-gray-200">
                             <thead className="bg-gray-50">
                                 <tr>
+<<<<<<< HEAD
                                     <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
                                         Medicine
                                     </th>
@@ -292,6 +305,24 @@ const MedicineList = () => {
                                         Price
                                     </th>
                                     <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+=======
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Medicine
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Category
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Batch & Expiry
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Stock
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Price
+                                    </th>
+                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Actions
                                     </th>
                                 </tr>
@@ -305,6 +336,7 @@ const MedicineList = () => {
                                         <tr key={medicine._id} className="hover:bg-gray-50">
                                             <td className="px-6 py-4">
                                                 <div>
+<<<<<<< HEAD
                                                     <div className="text-lg font-medium text-gray-900">
                                                         {medicine.medicineName}
                                                     </div>
@@ -312,16 +344,30 @@ const MedicineList = () => {
                                                         {medicine.genericName}
                                                     </div>
                                                     <div className="text-lg text-gray-400">
+=======
+                                                    <div className="text-sm font-medium text-gray-900">
+                                                        {medicine.medicineName}
+                                                    </div>
+                                                    <div className="text-sm text-gray-500">
+                                                        {medicine.genericName}
+                                                    </div>
+                                                    <div className="text-xs text-gray-400">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         ID: {medicine.medicineId}
                                                     </div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-lg font-medium ${getCategoryColor(medicine.category)}`}>
+=======
+                                                <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getCategoryColor(medicine.category)}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                     {medicine.category}
                                                 </span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <div className="text-lg text-gray-900">
                                                     {medicine.batchNumber}
                                                 </div>
@@ -329,30 +375,58 @@ const MedicineList = () => {
                                                     Exp: {formatDate(medicine.expiryDate)}
                                                     {expired && (
                                                         <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-lg font-medium bg-red-100 text-red-800">
+=======
+                                                <div className="text-sm text-gray-900">
+                                                    {medicine.batchNumber}
+                                                </div>
+                                                <div className={`text-sm ${expired ? 'text-red-600' : 'text-gray-500'}`}>
+                                                    Exp: {formatDate(medicine.expiryDate)}
+                                                    {expired && (
+                                                        <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                             Expired
                                                         </span>
                                                     )}
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
+<<<<<<< HEAD
                                                 <div className="text-lg font-medium text-gray-900">
                                                     {medicine.quantity} {medicine.unit}
                                                 </div>
                                                 <div className="mt-1">
                                                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-lg font-medium ${stockStatus.color}`}>
+=======
+                                                <div className="text-sm font-medium text-gray-900">
+                                                    {medicine.quantity} {medicine.unit}
+                                                </div>
+                                                <div className="mt-1">
+                                                    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${stockStatus.color}`}>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         {stockStatus.text}
                                                     </span>
                                                 </div>
                                                 {medicine.quantity <= medicine.reorderLevel && medicine.quantity > 0 && (
+<<<<<<< HEAD
                                                     <div className="mt-1 text-lg text-yellow-600">
+=======
+                                                    <div className="mt-1 text-xs text-yellow-600">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                         Reorder at: {medicine.reorderLevel}
                                                     </div>
                                                 )}
                                             </td>
+<<<<<<< HEAD
                                             <td className="px-6 py-4 whitespace-nowrap text-lg text-gray-900">
                                                 ${medicine.unitPrice?.toFixed(2) || '0.00'}
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-lg font-medium">
+=======
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                                ${medicine.unitPrice?.toFixed(2) || '0.00'}
+                                            </td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 <div className="flex space-x-2">
                                                     <Link
                                                         to={`/pharmacy/inventory/${medicine._id}`}
@@ -381,8 +455,13 @@ const MedicineList = () => {
                             <div className="mx-auto h-12 w-12 text-gray-400">
                                 <BeakerIcon className="h-12 w-12" />
                             </div>
+<<<<<<< HEAD
                             <h3 className="mt-2 text-lg font-medium text-gray-900">No medicines found</h3>
                             <p className="mt-1 text-lg text-gray-500">
+=======
+                            <h3 className="mt-2 text-sm font-medium text-gray-900">No medicines found</h3>
+                            <p className="mt-1 text-sm text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                 {categoryFilter || inStockFilter !== 'all' || searchTerm
                                     ? 'Try changing your filters or search term'
                                     : 'Get started by adding a new medicine to inventory'}
@@ -405,7 +484,11 @@ const MedicineList = () => {
                     {totalPages > 1 && (
                         <div className="px-6 py-4 border-t border-gray-200 bg-gray-50">
                             <div className="flex items-center justify-between">
+<<<<<<< HEAD
                                 <div className="text-lg text-gray-700">
+=======
+                                <div className="text-sm text-gray-700">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     Showing page {currentPage} of {totalPages}
                                 </div>
                                 <div className="flex space-x-2">

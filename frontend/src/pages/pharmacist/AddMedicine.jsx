@@ -8,10 +8,15 @@ import {
     BeakerIcon,
     CalendarIcon,
     CurrencyDollarIcon,
+<<<<<<< HEAD
     CubeIcon,
     ExclamationTriangleIcon
 } from '@heroicons/react/24/outline';
 import { CheckCircleIcon } from 'lucide-react';
+=======
+    CubeIcon
+} from '@heroicons/react/24/outline';
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
 
 const AddMedicine = () => {
     const navigate = useNavigate();
@@ -106,7 +111,14 @@ const AddMedicine = () => {
 
             setSuccess('Medicine added successfully!');
 
+<<<<<<< HEAD
 
+=======
+            // Reset form after successful submission
+            setTimeout(() => {
+                navigate('/pharmacy/inventory');
+            }, 1500);
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
 
         } catch (err) {
             setError(err.response?.data?.message || 'Failed to add medicine');
@@ -129,8 +141,13 @@ const AddMedicine = () => {
                 {/* Header */}
                 <div className="mb-8">
                     <button
+<<<<<<< HEAD
                         onClick={() => navigate('/pharmacist/inventory')}
                         className="inline-flex items-center text-lg font-medium text-blue-600 hover:text-blue-800 mb-4"
+=======
+                        onClick={() => navigate('/pharmacy/inventory')}
+                        className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 mb-4"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                     >
                         <ArrowLeftIcon className="h-4 w-4 mr-1" />
                         Back to Inventory
@@ -155,7 +172,11 @@ const AddMedicine = () => {
                                 <CheckCircleIcon className="h-5 w-5 text-green-400" />
                             </div>
                             <div className="ml-3">
+<<<<<<< HEAD
                                 <p className="text-lg text-green-700">{success}</p>
+=======
+                                <p className="text-sm text-green-700">{success}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                         </div>
                     </div>
@@ -168,7 +189,11 @@ const AddMedicine = () => {
                                 <ExclamationTriangleIcon className="h-5 w-5 text-red-400" />
                             </div>
                             <div className="ml-3">
+<<<<<<< HEAD
                                 <p className="text-lg text-red-700">{error}</p>
+=======
+                                <p className="text-sm text-red-700">{error}</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             </div>
                         </div>
                     </div>
@@ -187,7 +212,11 @@ const AddMedicine = () => {
                                     </h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Medicine Name *
                                             </label>
                                             <input
@@ -202,7 +231,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Generic Name
                                             </label>
                                             <input
@@ -216,7 +249,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Manufacturer
                                             </label>
                                             <input
@@ -230,7 +267,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Category
                                             </label>
                                             <select
@@ -257,7 +298,11 @@ const AddMedicine = () => {
                                     </h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Batch Number *
                                             </label>
                                             <input
@@ -272,7 +317,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Expiry Date *
                                             </label>
                                             <input
@@ -287,7 +336,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Quantity *
                                             </label>
                                             <input
@@ -303,7 +356,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Unit *
                                             </label>
                                             <select
@@ -330,7 +387,11 @@ const AddMedicine = () => {
                                     </h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Unit Price (USD) *
                                             </label>
                                             <div className="relative">
@@ -352,7 +413,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Reorder Level
                                             </label>
                                             <input
@@ -364,7 +429,11 @@ const AddMedicine = () => {
                                                 placeholder="e.g., 10"
                                                 min="0"
                                             />
+<<<<<<< HEAD
                                             <p className="mt-1 text-lg text-gray-500">
+=======
+                                            <p className="mt-1 text-xs text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Alert when stock reaches this level
                                             </p>
                                         </div>
@@ -379,7 +448,11 @@ const AddMedicine = () => {
                                     </h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Supplier Name
                                             </label>
                                             <input
@@ -393,7 +466,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Contact Number
                                             </label>
                                             <input
@@ -407,7 +484,11 @@ const AddMedicine = () => {
                                         </div>
 
                                         <div className="md:col-span-2">
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Address
                                             </label>
                                             <textarea
@@ -429,7 +510,11 @@ const AddMedicine = () => {
                                     </h3>
                                     <div className="space-y-6">
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Storage Conditions
                                             </label>
                                             <textarea
@@ -440,13 +525,21 @@ const AddMedicine = () => {
                                                 rows="2"
                                                 placeholder="e.g., Store in a cool, dry place below 25°C"
                                             />
+<<<<<<< HEAD
                                             <p className="mt-1 text-lg text-gray-500">
+=======
+                                            <p className="mt-1 text-xs text-gray-500">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Special storage instructions
                                             </p>
                                         </div>
 
                                         <div>
+<<<<<<< HEAD
                                             <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 Description
                                             </label>
                                             <textarea
@@ -467,14 +560,22 @@ const AddMedicine = () => {
                                         <button
                                             type="button"
                                             onClick={() => navigate('/pharmacy/inventory')}
+<<<<<<< HEAD
                                             className="px-6 py-3 border border-gray-300 text-lg font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+=======
+                                            className="px-6 py-3 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         >
                                             Cancel
                                         </button>
                                         <button
                                             type="submit"
                                             disabled={loading}
+<<<<<<< HEAD
                                             className={`px-6 py-3 border border-transparent text-lg font-medium rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${loading
+=======
+                                            className={`px-6 py-3 border border-transparent text-sm font-medium rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${loading
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                                 ? 'bg-blue-400 cursor-not-allowed'
                                                 : 'bg-blue-600 hover:bg-blue-700'
                                                 }`}

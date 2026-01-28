@@ -94,7 +94,11 @@ const Triage = () => {
                             <AlertTriangle className="w-5 h-5 text-red-600" />
                         </div>
                         <div className="ml-3">
+<<<<<<< HEAD
                             <p className="text-lg text-red-600">Critical (RED)</p>
+=======
+                            <p className="text-sm text-red-600">Critical (RED)</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">3</p>
                         </div>
                     </div>
@@ -106,7 +110,11 @@ const Triage = () => {
                             <Clock className="w-5 h-5 text-yellow-600" />
                         </div>
                         <div className="ml-3">
+<<<<<<< HEAD
                             <p className="text-lg text-yellow-600">Urgent (YELLOW)</p>
+=======
+                            <p className="text-sm text-yellow-600">Urgent (YELLOW)</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">5</p>
                         </div>
                     </div>
@@ -118,7 +126,11 @@ const Triage = () => {
                             <User className="w-5 h-5 text-green-600" />
                         </div>
                         <div className="ml-3">
+<<<<<<< HEAD
                             <p className="text-lg text-green-600">Non-urgent (GREEN)</p>
+=======
+                            <p className="text-sm text-green-600">Non-urgent (GREEN)</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">4</p>
                         </div>
                     </div>
@@ -130,7 +142,11 @@ const Triage = () => {
                             <Activity className="w-5 h-5 text-blue-600" />
                         </div>
                         <div className="ml-3">
+<<<<<<< HEAD
                             <p className="text-lg text-blue-600">Avg Wait Time</p>
+=======
+                            <p className="text-sm text-blue-600">Avg Wait Time</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             <p className="text-2xl font-bold">22 min</p>
                         </div>
                     </div>
@@ -165,10 +181,17 @@ const Triage = () => {
                                 <div className="ml-4">
                                     <div className="flex items-center space-x-4">
                                         <h3 className="font-bold text-lg">{patient.name}</h3>
+<<<<<<< HEAD
                                         <span className={`px-3 py-1 rounded-full text-lg font-bold ${getTagColor(patient.triageTag)}`}>
                                             {patient.triageTag}
                                         </span>
                                         <span className="text-lg text-gray-500">Age: {patient.age}</span>
+=======
+                                        <span className={`px-3 py-1 rounded-full text-sm font-bold ${getTagColor(patient.triageTag)}`}>
+                                            {patient.triageTag}
+                                        </span>
+                                        <span className="text-sm text-gray-500">Age: {patient.age}</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     </div>
 
                                     <p className="text-gray-700 mt-2">
@@ -178,6 +201,7 @@ const Triage = () => {
                                     <div className="flex items-center space-x-6 mt-3">
                                         <div className="flex items-center">
                                             <Heart className="w-4 h-4 text-red-500 mr-2" />
+<<<<<<< HEAD
                                             <span className="text-lg">BP: {patient.vitalSigns.bp}</span>
                                         </div>
                                         <div className="flex items-center">
@@ -191,6 +215,21 @@ const Triage = () => {
                                         <div className="flex items-center">
                                             <Droplets className="w-4 h-4 text-cyan-500 mr-2" />
                                             <span className="text-lg">SpO₂: {patient.vitalSigns.spo2}%</span>
+=======
+                                            <span className="text-sm">BP: {patient.vitalSigns.bp}</span>
+                                        </div>
+                                        <div className="flex items-center">
+                                            <Activity className="w-4 h-4 text-blue-500 mr-2" />
+                                            <span className="text-sm">HR: {patient.vitalSigns.hr} bpm</span>
+                                        </div>
+                                        <div className="flex items-center">
+                                            <Thermometer className="w-4 h-4 text-orange-500 mr-2" />
+                                            <span className="text-sm">Temp: {patient.vitalSigns.temp}°C</span>
+                                        </div>
+                                        <div className="flex items-center">
+                                            <Droplets className="w-4 h-4 text-cyan-500 mr-2" />
+                                            <span className="text-sm">SpO₂: {patient.vitalSigns.spo2}%</span>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +237,11 @@ const Triage = () => {
 
                             <div className="text-right">
                                 <div className="mb-4">
+<<<<<<< HEAD
                                     <p className="text-lg text-gray-500">Arrival</p>
+=======
+                                    <p className="text-sm text-gray-500">Arrival</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                     <p className="font-medium">{patient.arrivalTime}</p>
                                 </div>
                                 <div className="flex flex-col space-y-2">
@@ -216,7 +259,11 @@ const Triage = () => {
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-6">
                                     <div>
+<<<<<<< HEAD
                                         <p className="text-lg text-gray-500">Pain Level</p>
+=======
+                                        <p className="text-sm text-gray-500">Pain Level</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <div className="flex items-center">
                                             {[...Array(10)].map((_, i) => (
                                                 <div
@@ -236,16 +283,27 @@ const Triage = () => {
                                     </div>
 
                                     <div>
+<<<<<<< HEAD
                                         <p className="text-lg text-gray-500">Waiting Time</p>
+=======
+                                        <p className="text-sm text-gray-500">Waiting Time</p>
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         <p className="font-medium">{patient.waitingTime}</p>
                                     </div>
                                 </div>
 
                                 <div className="flex space-x-2">
+<<<<<<< HEAD
                                     <button className="px-3 py-1.5 text-lg border border-gray-300 rounded-lg hover:bg-gray-50">
                                         Assign to Doctor
                                     </button>
                                     <button className="px-3 py-1.5 text-lg border border-red-300 text-red-600 rounded-lg hover:bg-red-50">
+=======
+                                    <button className="px-3 py-1.5 text-sm border border-gray-300 rounded-lg hover:bg-gray-50">
+                                        Assign to Doctor
+                                    </button>
+                                    <button className="px-3 py-1.5 text-sm border border-red-300 text-red-600 rounded-lg hover:bg-red-50">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                                         Critical Alert
                                     </button>
                                 </div>
@@ -260,19 +318,31 @@ const Triage = () => {
                 <h2 className="text-xl font-bold mb-4">Quick Triage Assessment</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Patient Name
                         </label>
                         <input type="text" className="input-field" placeholder="Enter patient name" />
                     </div>
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Chief Complaint
                         </label>
                         <input type="text" className="input-field" placeholder="Enter chief complaint" />
                     </div>
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Vital Signs
                         </label>
                         <div className="grid grid-cols-2 gap-2">
@@ -281,7 +351,11 @@ const Triage = () => {
                         </div>
                     </div>
                     <div>
+<<<<<<< HEAD
                         <label className="block text-lg font-medium text-gray-700 mb-2">
+=======
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+>>>>>>> d39be5292d9cea5a7cc1a6e046a51ab2caf0fccd
                             Triage Tag
                         </label>
                         <select className="input-field">

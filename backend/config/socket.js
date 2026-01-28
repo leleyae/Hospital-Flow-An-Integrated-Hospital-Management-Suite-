@@ -5,6 +5,9 @@ const http = require('http');
 const { Server } = require('socket.io');
 
 const app = express();
+
+// Create HTTP server from Express app to support Socket.IO
+
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {

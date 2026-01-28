@@ -1,21 +1,7 @@
 🏥 HospitalFlow
-<div align="center"> <h3>Integrated Hospital Management Suite</h3> <p><em>Transforming healthcare delivery through technology</em></p> <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version"> <img src="https://img.shields.io/badge/license-MIT-green" alt="License"> <img src="https://img.shields.io/badge/status-active-success" alt="Status"> <img src="https://img.shields.io/badge/React-18.x-blue" alt="React"> <img src="https://img.shields.io/badge/Node.js-18.x-green" alt="Node.js"> <img src="https://img.shields.io/badge/Express-4.x-lightgrey" alt="Express"> <img src="https://img.shields.io/badge/MongoDB-7.x-green" alt="MongoDB"> </div>
-📋 Table of Contents
-Overview
+<div align="center"> <h3>Integrated Hospital Management Suite</h3> <p><em>Transforming healthcare delivery through technology</em></p> <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">  <img src="https://img.shields.io/badge/status-active-success" alt="Status"> <img src="https://img.shields.io/badge/React-18.x-blue" alt="React"> <img src="https://img.shields.io/badge/Node.js-18.x-green" alt="Node.js"> <img src="https://img.shields.io/badge/Express-4.x-lightgrey" alt="Express"> <img src="https://img.shields.io/badge/MongoDB-7.x-green" alt="MongoDB"> </div>
 
-Features
 
-Technology Stack
-
-Installation
-
-Project Structure
-
-API Documentation
-
-Team
-
-License
 
 🏥 Overview
 HospitalFlow is a comprehensive, web-based hospital management system designed to streamline healthcare delivery by integrating all hospital departments into a cohesive digital ecosystem. The system replaces fragmented paper-based workflows with a centralized platform that enhances patient safety, reduces administrative burden, and improves operational efficiency.

@@ -1,124 +1,71 @@
-HospitalFlow: An Integrated Hospital Management Suite
-🏥 Project Overview
+# 🏥 HospitalFlow
 
-HospitalFlow is a comprehensive, web-based hospital management system designed to streamline healthcare delivery by integrating all hospital departments into a cohesive digital ecosystem. The system replaces fragmented paper-based workflows with a centralized platform that enhances patient safety, reduces administrative burden, and improves operational efficiency.
+<div align="center">
+  <h3>Integrated Hospital Management Suite</h3>
+  <p><em>Transforming healthcare delivery through technology</em></p>
+  
+  <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+  <img src="https://img.shields.io/badge/status-active-success" alt="Status">
+</div>
 
+## ✨ Features
 
-Key Features
-👥 Role-Based Modules
+<table>
+  <tr>
+    <td width="30%">
+      <h4>👨‍⚕️ Patient Portal</h4>
+      <ul>
+        <li>Online appointments</li>
+        <li>Medical records</li>
+        <li>Secure messaging</li>
+      </ul>
+    </td>
+    <td width="30%">
+      <h4>💊 Pharmacy</h4>
+      <ul>
+        <li>Drug interaction checks</li>
+        <li>Inventory management</li>
+        <li>Auto-reorder alerts</li>
+      </ul>
+    </td>
+    <td width="30%">
+      <h4>📊 Admin Dashboard</h4>
+      <ul>
+        <li>Real-time analytics</li>
+        <li>Staff management</li>
+        <li>Financial reports</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-Module,Key Features
-👨‍⚕️ Patient Portal,"Online appointment booking, Medical records access, Secure messaging, Bill payment"
-🖥️ Reception,"Patient registration, Insurance verification, Visitor logging, Discharge processing"
-🚨 Triage,"Vital signs recording, Emergency tagging (RED/YELLOW/GREEN), Critical symptom alerts"
-🩺 Doctor,"Electronic Health Records (EHR), Diagnosis & prescriptions, Lab test ordering, OT scheduling"
-🔬 Laboratory,"Digital test requests, Result entry & verification, Equipment logs, PDF reports"
-💊 Pharmacy,"Prescription dispensing, Drug interaction checker, Inventory management, Expiry tracking"
-👨‍💼 Admin,"Staff management, Bed occupancy monitoring, Financial analytics, System configuration"
+## 🚀 Quick Start
 
-Technology Stack
-Frontend
-React 18 with TypeScript
+<div align="center">
+  <table>
+    <tr>
+      <td><strong>Backend</strong></td>
+      <td><code>cd server && npm install</code></td>
+    </tr>
+    <tr>
+      <td><strong>Frontend</strong></td>
+      <td><code>cd client && npm install</code></td>
+    </tr>
+    <tr>
+      <td><strong>Database</strong></td>
+      <td><code>mongod --dbpath ./data</code></td>
+    </tr>
+  </table>
+</div>
 
-React Router v6 for navigation
+## 📞 Contact
 
-Redux Toolkit for state management
-
-Material-UI / Ant Design for UI components
-
-Chart.js for data visualization
-
-Axios for API communication
-
-Backend
-Node.js with Express.js
-
-MongoDB with Mongoose ODM
-
-JWT for authentication
-
-Bcrypt.js for password hashing
-
-Socket.io for real-time updates
-
-Multer for file uploads
-
-PDFKit for report generation
-
-DevOps & Tools
-Docker for containerization
-
-Jest & React Testing Library for testing
-
-GitHub Actions for CI/CD
-
-ESLint & Prettier for code quality
-
-Swagger for API documentation
-
-📁 Project Structure
-Plaintext
-hospitalflow/
-├── client/                # Frontend React application
-│   ├── public/
-│   └── src/
-│       ├── components/    # Reusable UI components
-│       ├── features/      # Feature-based modules
-│       ├── pages/         # Page components
-│       ├── services/      # API services
-│       └── utils/         # Utility functions
-├── server/                # Backend Express application
-│   ├── src/
-│   │   ├── controllers/   # Route controllers
-│   │   ├── models/        # Mongoose models
-│   │   ├── routes/        # API routes
-│   │   ├── middleware/    # Custom middleware
-│   │   └── utils/         # Helper functions
-│   └── config/            # Configuration files
-├── docs/                  # Documentation
-└── docker-compose.yml     # Docker setup
-🚀 Getting Started
-Prerequisites
-Node.js (v18 or higher)
-
-MongoDB (v7 or higher)
-
-npm or yarn
-
-Git
-
-
-
-
-
-
-Installation
-Clone the repository
-
-Bash
-git clone https://github.com/leleyae/Hospital-Flow-An-Integrated-Hospital-Management-Suite-.git
-cd hospitalflow
-Install Dependencies
-
-Bash
-# Install backend dependencies
-cd server
-npm install
-
-# Install frontend dependencies
-cd ../client
-npm install
-Environment Setup Create a .env file in the server directory and add your configurations:
-
-Code snippet
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
-Run the Application
-
-Bash
-# Start Backend (from /server)
-npm run dev
-
-# Start Frontend (from /client)
-npm start
+<p align="center">
+  <a href="https://github.com/yourusername/hospitalflow/issues">
+    <img src="https://img.shields.io/badge/Report-Bug-red" alt="Report Bug">
+  </a>
+  <a href="https://github.com/yourusername/hospitalflow/pulls">
+    <img src="https://img.shields.io/badge/Request-Feature-green" alt="Request Feature">
+  </a>
+</p>

@@ -1,6 +1,8 @@
 // config/database.js
 const mongoose = require('mongoose');
 
+// Establishes a connection to the MongoDB database
+
 const connectDB = async () => {
     try {
         mongoose.connect(process.env.MONGO_URI);
@@ -10,5 +12,6 @@ const connectDB = async () => {
         process.exit(1);
     }
 };
+
 
 module.exports = connectDB;

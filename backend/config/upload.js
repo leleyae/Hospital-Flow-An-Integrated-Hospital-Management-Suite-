@@ -1,3 +1,4 @@
+// Import required modules for file uploads and filesystem handling
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
@@ -7,7 +8,7 @@ const uploadsDir = path.join(__dirname, '../uploads/buildings');
 if (!fs.existsSync(uploadsDir)) {
     fs.mkdirSync(uploadsDir, { recursive: true });
 }
-
+// Configure Multer storage destination and file naming strategy
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, uploadsDir);
@@ -17,7 +18,7 @@ const storage = multer.diskStorage({
         cb(null, 'building-' + uniqueSuffix + path.extname(file.originalname));
     }
 });
-
+// Validate uploaded files to allow only image formats
 const fileFilter = (req, file, cb) => {
     if (file.mimetype.startsWith('image/')) {
         cb(null, true);
@@ -25,7 +26,7 @@ const fileFilter = (req, file, cb) => {
         cb(new Error('Only image files are allowed!'), false);
     }
 };
-
+// Initialize Multer with storage, validation, and file size limits
 const upload = multer({
     storage: storage,
     fileFilter: fileFilter,
@@ -33,5 +34,6 @@ const upload = multer({
         fileSize: 5 * 1024 * 1024 // 5MB limit
     }
 });
+
 
 module.exports = upload;

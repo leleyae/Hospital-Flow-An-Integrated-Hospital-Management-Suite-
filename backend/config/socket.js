@@ -1,3 +1,5 @@
+// Initializes Express server and configures Socket.IO with CORS support
+
 const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
